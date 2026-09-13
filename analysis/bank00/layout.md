@@ -90,6 +90,23 @@ Range hashes:
 
 The source for `$028C-$03D1` is in `home/jp_copy2.asm`.
 
+## Japanese `$03D2-$04C8` — text rendering core
+
+This block contains `TextBoxBorder`, `PlaceString`, `PlaceNextChar`, the control-character dictionary, Japanese dakuten/handakuten conversion, and `NextChar`.
+
+The two Japanese revisions differ by only one byte in this complete 247-byte range: the high byte of the `PrintLetterDelay` call target at `$04C2-$04C4`.
+
+| Target | V1.0 | V1.1 |
+|---|---:|---:|
+| `PrintLetterDelay` | `$391D` | `$390B` |
+
+Range SHA-1 values:
+
+- V1.0: `96d926650aef3da4237aabeed5b46a5be58f0412`
+- V1.1: `a6eac2faadef25b113867f1203637861b4b3e916`
+
+The recovered code exposes the original Japanese text encoding behavior directly: `$E4/$E5` are handakuten/dakuten marks, values below `$60` are converted into base kana plus a diacritic tile, and the text-control codes occupy the `$4B-$5E` range. Source is in `home/jp_text_core.asm`.
+
 ## External cross-checks
 
 Semantic labels were cross-checked against the public `pret/pokered` disassembly and the public `Narishma-gb/pokegreen` Japanese Red/Green disassembly. Byte values, offsets, ROM hashes, revision differences, and localization differences recorded here are independently verified from the supplied ROM files.
