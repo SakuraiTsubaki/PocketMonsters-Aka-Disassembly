@@ -1,4 +1,4 @@
-# Bank 00 layout — first recovered ranges
+# Bank 00 layout — recovered ranges
 
 This document records ranges independently verified against the seven unique uploaded Red-family ROMs.
 
@@ -18,7 +18,7 @@ Japanese Red does not place the western `High Home` helpers after the Joypad vec
 - V1.0 SHA-1 for `$0068-$00FF`: `e825cf552841abf607fea09748fcae672cbe2b79`
 - V1.1 SHA-1 for `$0068-$00FF`: `ab8bed6a4b09d119f383ca1f8b5c6050c0a83ee9`
 
-## Western `$0061-$00BD`
+## Western `$0061-$00FF`
 
 English, German, Italian, Spanish, and French Red are byte-identical from `$0061-$00FF`. `$0061-$00BD` contains `DisableLCD`, `EnableLCD`, `ClearSprites`, `HideSprites`, `FarCopyData`, and `CopyData`; `$00BE-$00FF` is zero-filled. The reconstructed source is in `home/high_home.asm`.
 
@@ -30,6 +30,22 @@ SHA-1 for `$0061-$00FF` across all five western builds: `62518b31ffe74d9a3d075cb
 - Western builds: CGB boot-register check, store to build-specific `wOnCGB`, then jump to build-specific `Init`.
 
 The initial instructions are reconstructed in `home/start.asm`.
+
+## Japanese `$0153-$01C3`
+
+Japanese Red V1.0 and V1.1 are byte-identical throughout this range. It contains:
+
+- `Joypad`
+- `DisableLCD`
+- `EnableLCD`
+- `ClearSprites`
+- `HideSprites`
+- `FarCopyData`
+- `CopyData`
+
+The range SHA-1 is `90200ac376116d0ab6092465801788eac3f872fb`. The reconstructed source is in `home/jp_early_home.asm`.
+
+The machine code also confirms the Japanese RAM address difference `wBuffer = $CEE4`; western Red uses `$CEE9`.
 
 ## External cross-checks
 
