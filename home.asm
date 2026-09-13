@@ -25,4 +25,7 @@ IF DEF(BUILD_JP)
 	INCLUDE "home/jp_fade.asm"
 	INCLUDE "home/jp_serial.asm"
 	INCLUDE "home/jp_timer_audio.asm"
+	INCLUDE "home/jp_update_sprites.asm"
+	INCLUDE "data/items/jp_marts.asm"
+	INCLUDE "home/jp_overworld_text.asm"
 ENDC

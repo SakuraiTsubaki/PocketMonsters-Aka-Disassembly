@@ -52,9 +52,12 @@ Recovered so far:
 - Japanese `$0774-$09D9` BG-map addressing, row/column redraw, VBlank copy engines, overworld water/flower tile animation, embedded flower tiles, and `SoftReset`
 - Japanese `$09DA-$0B3B` `Init`, VRAM/audio reset, full VBlank interrupt body, audio dispatch, play-time bank call, and `DelayFrame`
 - Japanese `$0B3C-$0BA6` DMG palette load/fade routines and `FadePal1` through `FadePal8`
-- Japanese Serial/link engine from `$0BA7` through the byte immediately before `Timer`: V1.0 `$0D99`, V1.1 `$0D87`, including the revision-specific layout of `Serial_ExchangeBytes`, link-menu synchronization, byte/nybble exchange, counters, and connection establishment
-- Japanese Timer/audio dispatcher through the end of `PlaySound`: V1.0 `$0D9A-$0EBC`, V1.1 `$0D88-$0EAA`, including default map/bike/surf music selection, bank comparison, six-update pre-fade refresh, `PlayMusic`, and the three audio-engine `PlaySound` dispatch paths
+- Japanese Serial/link engine from `$0BA7` through the byte immediately before `Timer`: V1.0 `$0D99`, V1.1 `$0D87`
+- Japanese Timer/audio dispatcher through the end of `PlaySound`: V1.0 `$0D9A-$0EBC`, V1.1 `$0D88-$0EAA`
+- Japanese `UpdateSprites` trampoline, all Bank 00 mart inventory scripts, common overworld sign/item text, and `PickUpItemText`: V1.0 `$0EBD-$0FCD`, V1.1 `$0EAB-$0FBB`
 
-The Japanese reconstruction is now structured continuously from `$0150` through the end of `PlaySound`: **V1.0 through `$0EBC` and V1.1 through `$0EAA`** (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
+The Japanese reconstruction is now structured continuously from `$0150` through the byte immediately before the sprite decompression engine: **V1.0 through `$0FCD` and V1.1 through `$0FBB`** (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
+
+The next routine is `UncompressSpriteData` at V1.0 `$0FCE` / V1.1 `$0FBC`. This is sprite-processing code, not embedded sprite artwork; actual sprite graphics assets will be exported to PNG and source tile data when their ROM data banks are reached.
 
 See `analysis/bank00/` for verified offsets, revision differences, and range hashes. The active source is linked from `home.asm`.
