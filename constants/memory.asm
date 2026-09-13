@@ -41,6 +41,11 @@ DEF wShadowOAM                 EQU $C300
 DEF wShadowOAMEnd              EQU $C3A0
 
 IF DEF(BUILD_JP)
+	; SRAM sprite decompression work buffers.
+	DEF sSpriteBuffer1                      EQU $A188
+	DEF sSpriteBuffer2                      EQU $A310
+	DEF SPRITEBUFFERSIZE                    EQU $0188
+
 	DEF wChannelSoundIDs                     EQU $C026
 	DEF wNewSoundID                          EQU $C0EE
 	DEF wAudioROMBank                        EQU $C0EF
@@ -67,6 +72,21 @@ IF DEF(BUILD_JP)
 	DEF wUnknownSerialCounter2               EQU $D051
 	DEF wMovingBGTilesCounter2               EQU $D062
 	DEF wDisableVBlankWYUpdate               EQU $D07D
+	DEF wSpriteCurPosX                       EQU $D07E
+	DEF wSpriteCurPosY                       EQU $D07F
+	DEF wSpriteWidth                         EQU $D080
+	DEF wSpriteHeight                        EQU $D081
+	DEF wSpriteInputCurByte                  EQU $D082
+	DEF wSpriteInputBitCounter               EQU $D083
+	DEF wSpriteOutputBitOffset               EQU $D084
+	DEF wSpriteLoadFlags                     EQU $D085
+	DEF wSpriteUnpackMode                    EQU $D086
+	DEF wSpriteFlipped                       EQU $D087
+	DEF wSpriteInputPtr                      EQU $D088
+	DEF wSpriteOutputPtr                     EQU $D08A
+	DEF wSpriteOutputPtrCached               EQU $D08C
+	DEF wSpriteDecodeTable0Ptr               EQU $D08E
+	DEF wSpriteDecodeTable1Ptr               EQU $D090
 	DEF wVBlankSavedROMBank                  EQU $D0E7
 	DEF wLinkState                           EQU $D0F0
 	DEF wPlayerName                          EQU $D11D
