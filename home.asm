@@ -19,4 +19,5 @@ IF DEF(BUILD_JP)
 	INCLUDE "data/tilesets/jp_collision_tile_ids.asm"
 	INCLUDE "home/jp_copy2.asm"
 	INCLUDE "home/jp_text_core.asm"
+	INCLUDE "home/jp_text_engine.asm"
 ENDC
