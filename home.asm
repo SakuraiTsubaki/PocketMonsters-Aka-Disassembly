@@ -32,4 +32,6 @@ IF DEF(BUILD_JP)
 	INCLUDE "home/jp_reset_player_sprite.asm"
 	INCLUDE "home/jp_fade_audio.asm"
 	INCLUDE "home/jp_text_script.asm"
+	INCLUDE "home/jp_start_menu.asm"
+	INCLUDE "home/jp_count_set_bits.asm"
 ENDC
