@@ -44,8 +44,9 @@ Recovered so far:
 - Japanese V1.0/V1.1 `$0153-$01C3` early Home routines
 - Japanese V1.0/V1.1 `$01C4-$028B` collision-tile tables, reproduced exactly from structured source
 - Japanese V1.0/V1.1 `$028C-$0358` banked copy and VBlank video-copy helpers
-- Japanese `$0359-$03D1` interruption, tile-area, BG transfer, and screen-clear helpers with the two revision-dependent call targets preserved
+- Japanese `$0359-$03D1` interruption, tile-area, BG transfer, and screen-clear helpers with revision-dependent call targets preserved
+- Japanese `$03D2-$04C8` text-box renderer, string-control dispatcher, and dakuten/handakuten kana conversion core
 
-The Japanese reconstruction is therefore structured continuously from `$0150` through `$03D1` (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
+The Japanese reconstruction is now structured continuously from `$0150` through `$04C8` (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
 
 See `analysis/bank00/layout.md` for verified offsets, revision differences, and range hashes.
