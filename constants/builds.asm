@@ -14,6 +14,7 @@ IF DEF(AKA_JP_REV0)
 	DEF DelayFrameAddr             EQU $0B31
 	DEF GetRowColAddressBgMapAddr  EQU $0774
 	DEF JoypadLowSensitivityAddr   EQU $3879
+	DEF PrintLetterDelayAddr       EQU $391D
 	DEF Delay3Addr                 EQU $3E07
 	DEF HEADER_CART_TYPE           EQU $03
 	DEF HEADER_ROM_SIZE            EQU $04
@@ -31,6 +32,7 @@ IF DEF(AKA_JP_REVA)
 	DEF DelayFrameAddr             EQU $0B31
 	DEF GetRowColAddressBgMapAddr  EQU $0774
 	DEF JoypadLowSensitivityAddr   EQU $3867
+	DEF PrintLetterDelayAddr       EQU $390B
 	DEF Delay3Addr                 EQU $3DF5
 	DEF HEADER_CART_TYPE           EQU $03
 	DEF HEADER_ROM_SIZE            EQU $04
