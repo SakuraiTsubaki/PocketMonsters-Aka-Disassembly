@@ -36,12 +36,13 @@ DEF wShadowOAM                 EQU $C300
 DEF wShadowOAMEnd              EQU $C3A0
 
 IF DEF(BUILD_JP)
-	DEF wTileMap                    EQU $C3A0
-	DEF wRedrawRowOrColumnSrcTiles  EQU $CBFC
-	DEF wTextDest                   EQU $CC3A
 	DEF wAudioROMBank               EQU $C0EF
 	DEF wAudioSavedROMBank          EQU $C0F0
 	DEF wNewSoundID                 EQU $C0EE
+	DEF wTileMap                    EQU $C3A0
+	DEF wRedrawRowOrColumnSrcTiles  EQU $CBFC
+	DEF wTextDest                   EQU $CC3A
+	DEF wBuffer                     EQU $CEE4
 	DEF wEnemyMonNick               EQU $CFC1
 	DEF wAudioFadeOutControl        EQU $CFAE
 	DEF wLastMusicSoundID           EQU $CFB1
@@ -54,7 +55,7 @@ IF DEF(BUILD_JP)
 	DEF wPlayerName                 EQU $D11D
 	DEF wRivalName                  EQU $D2CE
 	DEF wLetterPrintingDelayFlags   EQU $D2D7
-	DEF wBuffer                     EQU $CEE4
+	DEF wMapPalOffset               EQU $D2DC
 ENDC
 
 IF DEF(BUILD_WEST)
