@@ -48,7 +48,8 @@ Recovered so far:
 - Japanese `$03D2-$04C8` text-box renderer, string-control dispatcher, and dakuten/handakuten kana conversion core
 - Japanese `$04C9-$0773` name/control-token expansion, paragraph/scroll logic, `TextCommandProcessor`, sound/cry text commands, and complete text-command jump table
 - Japanese `$0774-$09D9` BG-map addressing, row/column redraw, VBlank copy engines, overworld water/flower tile animation, embedded flower tiles, and `SoftReset`
+- Japanese `$09DA-$0B3B` `Init`, VRAM/audio reset, full VBlank interrupt body, audio dispatch, play-time bank call, and `DelayFrame`
 
-The Japanese reconstruction is now structured continuously from `$0150` through `$09D9` (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
+The Japanese reconstruction is now structured continuously from `$0150` through `$0B3B` (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
 
-See `analysis/bank00/layout.md`, `analysis/bank00/text_engine_04c9_0773.md`, and `analysis/bank00/vcopy_0774_09d9.md` for verified offsets, revision differences, and range hashes. The active source is linked from `home.asm`.
+See `analysis/bank00/layout.md`, `analysis/bank00/text_engine_04c9_0773.md`, `analysis/bank00/vcopy_0774_09d9.md`, and `analysis/bank00/init_vblank_09da_0b3b.md` for verified offsets, revision differences, and range hashes. The active source is linked from `home.asm`.
