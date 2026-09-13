@@ -37,7 +37,7 @@ Newly mapped state includes the player sprite structures at `$C100` / `$C200`, s
 
 ## Next boundary
 
-The next Bank 00 code starts with the text-script engine (`RunTextScript`) at:
+The next Bank 00 code starts with the text-script engine (`DisplayTextID`) at:
 
 - V1.0 `$13F1`
 - V1.1 `$13DF`
