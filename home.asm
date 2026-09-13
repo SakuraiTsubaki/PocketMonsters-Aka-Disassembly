@@ -13,3 +13,7 @@ IF DEF(BUILD_WEST)
 ENDC
 
 INCLUDE "home/start.asm"
+
+IF DEF(BUILD_JP)
+	INCLUDE "home/jp_early_home.asm"
+ENDC
