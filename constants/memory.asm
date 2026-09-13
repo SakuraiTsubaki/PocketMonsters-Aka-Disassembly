@@ -4,6 +4,7 @@ DEF hDMARoutine                EQU $FF80
 DEF hSoftReset                 EQU $FF8A
 DEF hROMBankTemp               EQU $FF8B
 DEF hTextID                    EQU $FF8C
+DEF hMoney                     EQU $FF9F
 DEF hSerialReceivedNewData     EQU $FFA9
 DEF hSerialConnectionStatus    EQU $FFAA
 DEF hSerialIgnoringInitialData EQU $FFAB
@@ -24,19 +25,19 @@ DEF hSPTemp                    EQU $FFBF
 DEF hVBlankCopyBGSource        EQU $FFC1
 DEF hVBlankCopyBGDest          EQU $FFC3
 DEF hVBlankCopyBGNumRows       EQU $FFC5
-DEF hVBlankCopySize            EQU $FFC6
-DEF hVBlankCopySource          EQU $FFC7
-DEF hVBlankCopyDest            EQU $FFC9
-DEF hVBlankCopyDoubleSize      EQU $FFCB
-DEF hVBlankCopyDoubleSource    EQU $FFCC
-DEF hVBlankCopyDoubleDest      EQU $FFCE
-DEF hRedrawRowOrColumnMode     EQU $FFD0
-DEF hRedrawRowOrColumnDest     EQU $FFD1
-DEF hFrameCounter              EQU $FFD5
-DEF hVBlankOccurred            EQU $FFD6
-DEF hTileAnimations            EQU $FFD7
-DEF hMovingBGTilesCounter1     EQU $FFD8
-DEF hWhoseTurn                 EQU $FFF3
+DEF hVBlankCopySize           EQU $FFC6
+DEF hVBlankCopySource         EQU $FFC7
+DEF hVBlankCopyDest           EQU $FFC9
+DEF hVBlankCopyDoubleSize     EQU $FFCB
+DEF hVBlankCopyDoubleSource   EQU $FFCC
+DEF hVBlankCopyDoubleDest     EQU $FFCE
+DEF hRedrawRowOrColumnMode    EQU $FFD0
+DEF hRedrawRowOrColumnDest    EQU $FFD1
+DEF hFrameCounter             EQU $FFD5
+DEF hVBlankOccurred           EQU $FFD6
+DEF hTileAnimations           EQU $FFD7
+DEF hMovingBGTilesCounter1    EQU $FFD8
+DEF hWhoseTurn                EQU $FFF3
 
 DEF wShadowOAM                 EQU $C300
 DEF wShadowOAMEnd              EQU $C3A0
@@ -110,9 +111,11 @@ IF DEF(BUILD_JP)
 	DEF wWalkBikeSurfStateCopy               EQU $D0DF
 	DEF wNumSetBits                          EQU $D0E3
 	DEF wVBlankSavedROMBank                  EQU $D0E7
+	DEF wTextBoxID                           EQU $D0EA
 	DEF wItemListPointer                     EQU $D0ED
 	DEF wLinkState                           EQU $D0F0
 	DEF wPlayerName                          EQU $D11D
+	DEF wPlayerMoney                         EQU $D2CB
 	DEF wRivalName                           EQU $D2CE
 	DEF wLetterPrintingDelayFlags            EQU $D2D7
 	DEF wMapMusicSoundID                     EQU $D2DA
