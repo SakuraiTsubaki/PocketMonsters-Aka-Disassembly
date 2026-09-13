@@ -32,4 +32,15 @@ Eight ROM files were supplied for analysis. The additional English copy is byte-
 
 ## Current status
 
-Source inventory and header verification are complete for all 7 unique builds. **Bank 00** is the first active reconstruction target.
+Source inventory and header verification are complete for all 7 unique builds. **Bank 00 reconstruction is active.**
+
+Recovered so far:
+
+- common reset/interrupt vectors and cartridge entry point
+- build-specific VBlank/Timer/Serial targets
+- Japanese RST `$38` behavior and revision-specific `$0068-$00FF` residual data
+- western `$0061-$00FF` High Home routines (`DisableLCD`, `EnableLCD`, sprite clearing/hiding, copy helpers)
+- build-specific `_Start` code at `$0150`
+- Japanese V1.0/V1.1 `$0153-$01C3` Home routines (`Joypad`, LCD helpers, sprite helpers, copy helpers)
+
+See `analysis/bank00/layout.md` for verified offsets and range hashes.
