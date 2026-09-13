@@ -25,6 +25,15 @@ IF DEF(AKA_JP_REV0)
 	DEF PlayCryAddr                   EQU $2DC7
 	DEF StopAllSoundsAddr             EQU $0A96
 	DEF GBPalWhiteOutAddr             EQU $3E15
+	DEF FillMemoryAddr                EQU $372A
+	DEF WriteDMACodeToHRAMAddr        EQU $4750
+	DEF PredefAddr                    EQU $3E9D
+	DEF GBPalNormalAddr               EQU $3E0C
+	DEF PrepareTitleScreenAddr        EQU $476E
+	DEF PrepareOAMDataAddr            EQU $4672
+	DEF RandomAddr                    EQU $3E8C
+	DEF FadeOutAudioAddr              EQU $139C
+	DEF BankswitchAddr                EQU $3620
 	DEF HEADER_CART_TYPE              EQU $03
 	DEF HEADER_ROM_SIZE               EQU $04
 	DEF HEADER_RAM_SIZE               EQU $03
@@ -52,6 +61,15 @@ IF DEF(AKA_JP_REVA)
 	DEF PlayCryAddr                   EQU $2DB5
 	DEF StopAllSoundsAddr             EQU $0A96
 	DEF GBPalWhiteOutAddr             EQU $3E03
+	DEF FillMemoryAddr                EQU $3718
+	DEF WriteDMACodeToHRAMAddr        EQU $4750
+	DEF PredefAddr                    EQU $3E8B
+	DEF GBPalNormalAddr               EQU $3DFA
+	DEF PrepareTitleScreenAddr        EQU $476E
+	DEF PrepareOAMDataAddr            EQU $4672
+	DEF RandomAddr                    EQU $3E7A
+	DEF FadeOutAudioAddr              EQU $138A
+	DEF BankswitchAddr                EQU $360E
 	DEF HEADER_CART_TYPE              EQU $03
 	DEF HEADER_ROM_SIZE               EQU $04
 	DEF HEADER_RAM_SIZE               EQU $03
