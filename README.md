@@ -29,6 +29,8 @@ Eight ROM files were supplied for analysis. The additional English copy is byte-
 - Raw extraction is only an intermediate reconstruction stage and should be replaced by structured source as analysis progresses.
 - Preserve build-specific differences instead of flattening revisions/localizations into one assumed layout.
 - Verify completed outputs against the recorded SHA-1 values.
+- When sprite/tile/font/UI graphics are recovered, commit the reconstructed image assets too (PNG plus the relevant 1bpp/2bpp conversion source, manifests, palettes/tilemaps where applicable). Graphics work is not considered complete with ASM metadata alone.
+- Deduplicate graphics that are byte-identical across revisions/localizations; preserve genuinely different artwork as build-specific assets.
 
 ## Current status
 
@@ -50,7 +52,8 @@ Recovered so far:
 - Japanese `$0774-$09D9` BG-map addressing, row/column redraw, VBlank copy engines, overworld water/flower tile animation, embedded flower tiles, and `SoftReset`
 - Japanese `$09DA-$0B3B` `Init`, VRAM/audio reset, full VBlank interrupt body, audio dispatch, play-time bank call, and `DelayFrame`
 - Japanese `$0B3C-$0BA6` DMG palette load/fade routines and `FadePal1` through `FadePal8`
+- Japanese Serial/link engine from `$0BA7` through the byte immediately before `Timer`: V1.0 `$0D99`, V1.1 `$0D87`, including the revision-specific layout of `Serial_ExchangeBytes`, link-menu synchronization, byte/nybble exchange, counters, and connection establishment
 
-The Japanese reconstruction is now structured continuously from `$0150` through `$0BA6` (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
+The Japanese reconstruction is now structured continuously from `$0150` through the complete pre-`Timer` serial block: **V1.0 through `$0D99` and V1.1 through `$0D87`** (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
 
 See `analysis/bank00/` for verified offsets, revision differences, and range hashes. The active source is linked from `home.asm`.

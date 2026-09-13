@@ -34,6 +34,8 @@ IF DEF(AKA_JP_REV0)
 	DEF RandomAddr                    EQU $3E8C
 	DEF FadeOutAudioAddr              EQU $139C
 	DEF BankswitchAddr                EQU $3620
+	DEF SaveScreenTilesToBuffer1Addr  EQU $3761
+	DEF LoadScreenTilesFromBuffer1Addr EQU $376D
 	DEF HEADER_CART_TYPE              EQU $03
 	DEF HEADER_ROM_SIZE               EQU $04
 	DEF HEADER_RAM_SIZE               EQU $03
@@ -70,6 +72,8 @@ IF DEF(AKA_JP_REVA)
 	DEF RandomAddr                    EQU $3E7A
 	DEF FadeOutAudioAddr              EQU $138A
 	DEF BankswitchAddr                EQU $360E
+	DEF SaveScreenTilesToBuffer1Addr  EQU $374F
+	DEF LoadScreenTilesFromBuffer1Addr EQU $375B
 	DEF HEADER_CART_TYPE              EQU $03
 	DEF HEADER_ROM_SIZE               EQU $04
 	DEF HEADER_RAM_SIZE               EQU $03
