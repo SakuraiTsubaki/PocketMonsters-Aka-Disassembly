@@ -17,7 +17,12 @@ DEF rOBP1 EQU $FF49
 DEF rWY   EQU $FF4A
 DEF rWX   EQU $FF4B
 DEF rIE   EQU $FFFF
+
+; MBC1 control registers used by Japanese Red.
+DEF rRAMG EQU $0000
 DEF rROMB EQU $2000
+DEF rRAMB EQU $4000
+DEF RAMG_SRAM_ENABLE EQU $0A
 
 ; Serial-control bits.
 DEF SC_EXTERNAL EQU $00
