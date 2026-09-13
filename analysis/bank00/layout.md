@@ -33,20 +33,63 @@ The initial instructions are reconstructed in `home/start.asm`.
 
 ## Japanese `$0153-$01C3`
 
-Japanese Red V1.0 and V1.1 are byte-identical throughout this range. It contains:
+Japanese Red V1.0 and V1.1 are byte-identical throughout this range. It contains `Joypad`, LCD helpers, sprite clear/hide helpers, `FarCopyData`, and `CopyData`.
 
-- `Joypad`
-- `DisableLCD`
-- `EnableLCD`
-- `ClearSprites`
-- `HideSprites`
-- `FarCopyData`
-- `CopyData`
+Range SHA-1: `90200ac376116d0ab6092465801788eac3f872fb`.
 
-The range SHA-1 is `90200ac376116d0ab6092465801788eac3f872fb`. The reconstructed source is in `home/jp_early_home.asm`.
+The machine code confirms the Japanese `wBuffer = $CEE4`; western Red uses `$CEE9`.
 
-The machine code also confirms the Japanese RAM address difference `wBuffer = $CEE4`; western Red uses `$CEE9`.
+## Japanese `$01C4-$028B` — collision tables
+
+V1.0 and V1.1 are byte-identical. This 200-byte block contains the per-tileset collision tile lists from `Underground_Coll` through `Plateau_Coll`, including one empty/unused `$FF`-only table.
+
+- size: 200 bytes
+- SHA-1: `af69e30d0ddd85bf0f2be3fe6182073a5acc8099`
+- source: `data/tilesets/jp_collision_tile_ids.asm`
+
+The structured `db` tables were regenerated from the supplied ROM bytes and reproduce the complete `$01C4-$028B` byte range exactly.
+
+## Japanese `$028C-$0358` — copy/video helpers
+
+V1.0 and V1.1 are byte-identical throughout this range. Recovered routines:
+
+- `FarCopyData2`
+- `FarCopyData3`
+- `FarCopyDataDouble`
+- `CopyVideoData`
+- `CopyVideoDataDouble`
+
+Range SHA-1: `aa2ddaaf5882261093d2bdf010cdf44f4f03c97a`.
+
+The code directly verifies HRAM locations used by the VBlank copy subsystem, including `hROMBankTemp = $FF8B`, `hAutoBGTransferEnabled = $FFBA`, and the copy control block at `$FFC1-$FFCF`.
+
+## Japanese `$0359-$03D1` — input interruption and screen helpers
+
+Recovered routines:
+
+- `CheckForUserInterruption`
+- `ClearScreenArea`
+- `CopyScreenTileBufferToVRAM`
+- `ClearScreen`
+
+Most bytes are shared between V1.0 and V1.1. Two revision-dependent call targets are preserved explicitly:
+
+| Target | V1.0 | V1.1 |
+|---|---:|---:|
+| `JoypadLowSensitivity` | `$3879` | `$3867` |
+| `Delay3` | `$3E07` | `$3DF5` |
+
+`DelayFrame = $0B31` and `GetRowColAddressBgMap = $0774` are common to both revisions in this recovered range.
+
+Range hashes:
+
+- `$0359-$0373` V1.0: `b611b36637cc37f345d977ef8fa201ff8f6df06c`
+- `$0359-$0373` V1.1: `32e403bf684e79d2c5d988562e0f37ddc104f8c7`
+- `$0374-$03D1` V1.0: `3aaf68f68b7b7fc95145cd0fdc870f8a506bab1e`
+- `$0374-$03D1` V1.1: `3a37fb78af1f17288e463c623e7ce4d474416743`
+
+The source for `$028C-$03D1` is in `home/jp_copy2.asm`.
 
 ## External cross-checks
 
-Semantic labels were cross-checked against the public `pret/pokered` disassembly and the public `Narishma-gb/pokegreen` Japanese Red/Green disassembly. Byte values, offsets, ROM hashes, and localization differences in this repository are independently verified from the supplied ROM files.
+Semantic labels were cross-checked against the public `pret/pokered` disassembly and the public `Narishma-gb/pokegreen` Japanese Red/Green disassembly. Byte values, offsets, ROM hashes, revision differences, and localization differences recorded here are independently verified from the supplied ROM files.
