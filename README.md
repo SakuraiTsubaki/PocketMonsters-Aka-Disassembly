@@ -62,9 +62,10 @@ Recovered so far:
 - Japanese `CountSetBits`: V1.0 `$1690-$16A6`, V1.1 `$167E-$1694`
 - Japanese money/inventory wrappers: V1.0 `$16A7-$16F6`, V1.1 `$1695-$16E4`
 - Japanese `DisplayListMenuID` list-menu setup/selection/scroll core: V1.0 `$16F7-$1869`, V1.1 `$16E5-$1857`
+- Japanese `DisplayChooseQuantityMenu` quantity/price selector: V1.0 `$186A-$194B`, V1.1 `$1858-$1939`
 
-The Japanese reconstruction is now structured continuously from `$0150` through the list-menu core: **V1.0 through `$1869` and V1.1 through `$1857`** (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
+The Japanese reconstruction is now structured continuously from `$0150` through the quantity selector: **V1.0 through `$194B` and V1.1 through `$1939`** (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
 
-The next Bank 00 routine is `DisplayChooseQuantityMenu` at V1.0 `$186A` / V1.1 `$1858`.
+The next Bank 00 routine is `ExitListMenu` at V1.0 `$194C` / V1.1 `$193A`, followed by `PrintListMenuEntries`.
 
 See `analysis/bank00/` for verified offsets, revision differences, and range hashes. The active source is linked from `home.asm`.

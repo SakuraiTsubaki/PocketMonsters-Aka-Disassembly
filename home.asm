@@ -36,4 +36,5 @@ IF DEF(BUILD_JP)
 	INCLUDE "home/jp_count_set_bits.asm"
 	INCLUDE "home/jp_inventory.asm"
 	INCLUDE "home/jp_list_menu_core.asm"
+	INCLUDE "home/jp_list_quantity.asm"
 ENDC
