@@ -41,6 +41,11 @@ Recovered so far:
 - Japanese RST `$38` behavior and revision-specific `$0068-$00FF` residual data
 - western `$0061-$00FF` High Home routines (`DisableLCD`, `EnableLCD`, sprite clearing/hiding, copy helpers)
 - build-specific `_Start` code at `$0150`
-- Japanese V1.0/V1.1 `$0153-$01C3` Home routines (`Joypad`, LCD helpers, sprite helpers, copy helpers)
+- Japanese V1.0/V1.1 `$0153-$01C3` early Home routines
+- Japanese V1.0/V1.1 `$01C4-$028B` collision-tile tables, reproduced exactly from structured source
+- Japanese V1.0/V1.1 `$028C-$0358` banked copy and VBlank video-copy helpers
+- Japanese `$0359-$03D1` interruption, tile-area, BG transfer, and screen-clear helpers with the two revision-dependent call targets preserved
 
-See `analysis/bank00/layout.md` for verified offsets and range hashes.
+The Japanese reconstruction is therefore structured continuously from `$0150` through `$03D1` (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
+
+See `analysis/bank00/layout.md` for verified offsets, revision differences, and range hashes.
