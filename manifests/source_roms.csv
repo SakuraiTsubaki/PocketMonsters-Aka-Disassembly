@@ -1,0 +1,8 @@
+build_id,release,size_bytes,banks,sha1,md5,title,sgb_flag,cartridge_type,rom_size_code,ram_size_code,destination_code,header_version,header_checksum,global_checksum
+aka-jp-rev0,Pocket Monsters Aka (Japan),524288,32,0623ad12f48c259447980d68bd85ddbf8204b2cd,912d4f77d118390a2e2c42b2016a19d4,POKEMON RED,0x03,0x03,0x04,0x03,0x00,0,0x32,0xA2C1
+aka-jp-reva,Pocket Monsters Aka (Japan) Rev A,524288,32,ef74c79cded14204ac79e77f4964d9cb25003120,4c44844f8d5aa3305a0cf2c95cf96333,POKEMON RED,0x03,0x03,0x04,0x03,0x00,1,0x31,0xB866
+red-en-ue,Pokemon Red Version (USA Europe),1048576,64,ea9bcae617fdf159b045185467ae58b2e4a48b9a,3d45c1ee9abd5738df46d2bdda8b57dc,POKEMON RED,0x03,0x13,0x05,0x03,0x01,0,0x20,0x91E6
+red-de,Pokemon Rote Edition (Germany),1048576,64,87d523fe1a0c548db7c5477b451ddec1eb083c06,8ed0e8d45a81ca34de625d930148a512,POKEMON RED,0x03,0x1B,0x05,0x03,0x01,0,0x18,0x5CDC
+red-it,Pokemon Versione Rossa (Italy),1048576,64,65b97cf8f2f1cff711a6d08c6c894c8ce65ce522,6468fb0652dde30eb968a44f17c686f1,POKEMON RED,0x03,0x1B,0x05,0x03,0x01,0,0x18,0x89D2
+red-es,Pokemon Edicion Roja (Spain),1048576,64,fc17c5b904d551b1b908054ccd1c493f755f832a,463c241c8721ab1d1da17c91de9f8a32,POKEMON RED,0x03,0x1B,0x05,0x03,0x01,0,0x18,0x384A
+red-fr,Pokemon Version Rouge (France),1048576,64,47a7622fa30e6402a3891fe65b3a930bf9bd7aec,669700657cb06ed09371cdbdef69e8a3,POKEMON RED,0x03,0x1B,0x05,0x03,0x01,0,0x18,0x7AFC
