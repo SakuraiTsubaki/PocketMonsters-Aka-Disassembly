@@ -57,9 +57,12 @@ Recovered so far:
 - Japanese `UpdateSprites` trampoline, all Bank 00 mart inventory scripts, common overworld sign/item text, and `PickUpItemText`: V1.0 `$0EBD-$0FCD`, V1.1 `$0EAB-$0FBB`
 - Japanese sprite compression/decompression engine, bitstream/RLE decoder, differential decode tables, chunk merge modes, and buffer helpers: V1.0 `$0FCE-$136A`, V1.1 `$0FBC-$1358`
 - Japanese `ResetPlayerSpriteData` and `FadeOutAudio`: V1.0 `$136B-$13F0`, V1.1 `$1359-$13DE`
+- Japanese `DisplayTextID` map/NPC text-script dispatcher and common dialogue handlers: V1.0 `$13F1-$15DD`, V1.1 `$13DF-$15CB`
+- Japanese `DisplayStartMenu` dispatcher: V1.0 `$15DE-$168F`, V1.1 `$15CC-$167D`
+- Japanese `CountSetBits`: V1.0 `$1690-$16A6`, V1.1 `$167E-$1694`
 
-The Japanese reconstruction is now structured continuously from `$0150` through the end of `FadeOutAudio`: **V1.0 through `$13F0` and V1.1 through `$13DE`** (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
+The Japanese reconstruction is now structured continuously from `$0150` through `CountSetBits`: **V1.0 through `$16A6` and V1.1 through `$1694`** (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
 
-The next routine is the Bank 00 text-script engine, beginning with `RunTextScript` at V1.0 `$13F1` / V1.1 `$13DF`.
+The next Bank 00 block is the inventory helper source, beginning with `SubtractAmountPaidFromMoney` at V1.0 `$16A7` / V1.1 `$1695`.
 
 See `analysis/bank00/` for verified offsets, revision differences, and range hashes. The active source is linked from `home.asm`.
