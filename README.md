@@ -60,10 +60,11 @@ Recovered so far:
 - Japanese `DisplayTextID` map/NPC text-script dispatcher and common dialogue handlers: V1.0 `$13F1-$15DD`, V1.1 `$13DF-$15CB`
 - Japanese `DisplayStartMenu` dispatcher: V1.0 `$15DE-$168F`, V1.1 `$15CC-$167D`
 - Japanese `CountSetBits`: V1.0 `$1690-$16A6`, V1.1 `$167E-$1694`
-- Japanese money/inventory wrappers (`SubtractAmountPaidFromMoney`, `AddAmountSoldToMoney`, `RemoveItemFromInventory`, `AddItemToInventory`): V1.0 `$16A7-$16F6`, V1.1 `$1695-$16E4`
+- Japanese money/inventory wrappers: V1.0 `$16A7-$16F6`, V1.1 `$1695-$16E4`
+- Japanese `DisplayListMenuID` list-menu setup/selection/scroll core: V1.0 `$16F7-$1869`, V1.1 `$16E5-$1857`
 
-The Japanese reconstruction is now structured continuously from `$0150` through the inventory helpers: **V1.0 through `$16F6` and V1.1 through `$16E4`** (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
+The Japanese reconstruction is now structured continuously from `$0150` through the list-menu core: **V1.0 through `$1869` and V1.1 through `$1857`** (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
 
-The next Bank 00 routine is `DisplayListMenuID` at V1.0 `$16F7` / V1.1 `$16E5`.
+The next Bank 00 routine is `DisplayChooseQuantityMenu` at V1.0 `$186A` / V1.1 `$1858`.
 
 See `analysis/bank00/` for verified offsets, revision differences, and range hashes. The active source is linked from `home.asm`.

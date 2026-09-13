@@ -16,6 +16,7 @@ DEF hWY                        EQU $FFB0
 DEF hJoyPressed                EQU $FFB3
 DEF hJoyHeld                   EQU $FFB4
 DEF hJoy5                      EQU $FFB5
+DEF hJoy7                      EQU $FFB7
 DEF hLoadedROMBank             EQU $FFB8
 DEF hSavedROMBank              EQU $FFB9
 DEF hAutoBGTransferEnabled     EQU $FFBA
@@ -25,19 +26,19 @@ DEF hSPTemp                    EQU $FFBF
 DEF hVBlankCopyBGSource        EQU $FFC1
 DEF hVBlankCopyBGDest          EQU $FFC3
 DEF hVBlankCopyBGNumRows       EQU $FFC5
-DEF hVBlankCopySize           EQU $FFC6
-DEF hVBlankCopySource         EQU $FFC7
-DEF hVBlankCopyDest           EQU $FFC9
-DEF hVBlankCopyDoubleSize     EQU $FFCB
-DEF hVBlankCopyDoubleSource   EQU $FFCC
-DEF hVBlankCopyDoubleDest     EQU $FFCE
-DEF hRedrawRowOrColumnMode    EQU $FFD0
-DEF hRedrawRowOrColumnDest    EQU $FFD1
-DEF hFrameCounter             EQU $FFD5
-DEF hVBlankOccurred           EQU $FFD6
-DEF hTileAnimations           EQU $FFD7
-DEF hMovingBGTilesCounter1    EQU $FFD8
-DEF hWhoseTurn                EQU $FFF3
+DEF hVBlankCopySize            EQU $FFC6
+DEF hVBlankCopySource          EQU $FFC7
+DEF hVBlankCopyDest            EQU $FFC9
+DEF hVBlankCopyDoubleSize      EQU $FFCB
+DEF hVBlankCopyDoubleSource    EQU $FFCC
+DEF hVBlankCopyDoubleDest      EQU $FFCE
+DEF hRedrawRowOrColumnMode     EQU $FFD0
+DEF hRedrawRowOrColumnDest     EQU $FFD1
+DEF hFrameCounter              EQU $FFD5
+DEF hVBlankOccurred            EQU $FFD6
+DEF hTileAnimations            EQU $FFD7
+DEF hMovingBGTilesCounter1     EQU $FFD8
+DEF hWhoseTurn                 EQU $FFF3
 
 DEF wShadowOAM                 EQU $C300
 DEF wShadowOAMEnd              EQU $C3A0
@@ -62,12 +63,20 @@ IF DEF(BUILD_JP)
 	DEF wAudioROMBank                        EQU $C0EF
 	DEF wAudioSavedROMBank                   EQU $C0F0
 	DEF wTileMap                             EQU $C3A0
+	DEF wRedrawRowOrColumnSrcTiles           EQU $CBFC
+	DEF wTopMenuItemY                        EQU $CC24
+	DEF wTopMenuItemX                        EQU $CC25
 	DEF wCurrentMenuItem                     EQU $CC26
+	DEF wMaxMenuItem                         EQU $CC28
+	DEF wMenuWatchedKeys                     EQU $CC29
 	DEF wLastMenuItem                        EQU $CC2A
 	DEF wBattleAndStartSavedMenuItem         EQU $CC2D
-	DEF wRedrawRowOrColumnSrcTiles           EQU $CBFC
-	DEF wDoNotWaitForButtonPressAfterDisplayingText EQU $CC3C
+	DEF wMenuCursorLocation                  EQU $CC30
+	DEF wMenuItemToSwap                      EQU $CC35
+	DEF wListScrollOffset                    EQU $CC36
+	DEF wMenuWatchMovingOutOfBounds          EQU $CC37
 	DEF wTextDest                            EQU $CC3A
+	DEF wDoNotWaitForButtonPressAfterDisplayingText EQU $CC3C
 	DEF wLinkMenuSelectionReceiveBuffer      EQU $CC3D
 	DEF wSerialExchangeNybbleTempReceiveData EQU $CC3D
 	DEF wSerialSyncAndExchangeNybbleReceiveData EQU $CC3D
@@ -81,7 +90,13 @@ IF DEF(BUILD_JP)
 	DEF wTextPredefFlag                      EQU $CF0C
 	DEF wSpriteIndex                         EQU $CF0E
 	DEF wItemList                            EQU $CF62
+	DEF wListPointer                         EQU $CF72
+	DEF wCurItem                             EQU $CF78
+	DEF wCurListMenuItem                     EQU $CF78
+	DEF wCurPartySpecies                     EQU $CF78
+	DEF wWhichPokemon                        EQU $CF79
 	DEF wListMenuID                          EQU $CF7B
+	DEF wMaxItemQuantity                     EQU $CF7E
 	DEF wFontLoaded                          EQU $CFAB
 	DEF wEnemyMonNick                        EQU $CFC1
 	DEF wAudioFadeOutControl                 EQU $CFAE
@@ -90,6 +105,7 @@ IF DEF(BUILD_JP)
 	DEF wLastMusicSoundID                    EQU $CFB1
 	DEF wUpdateSpritesEnabled                EQU $CFB2
 	DEF wBattleMonNick                       EQU $CFF0
+	DEF wBattleType                          EQU $D037
 	DEF wUnknownSerialCounter2               EQU $D051
 	DEF wMovingBGTilesCounter2               EQU $D062
 	DEF wDisableVBlankWYUpdate               EQU $D07D
@@ -108,13 +124,20 @@ IF DEF(BUILD_JP)
 	DEF wSpriteOutputPtrCached               EQU $D08C
 	DEF wSpriteDecodeTable0Ptr               EQU $D08E
 	DEF wSpriteDecodeTable1Ptr               EQU $D090
+	DEF wNameListIndex                       EQU $D092
+	DEF wPredefBank                          EQU $D094
 	DEF wWalkBikeSurfStateCopy               EQU $D0DF
 	DEF wNumSetBits                          EQU $D0E3
 	DEF wVBlankSavedROMBank                  EQU $D0E7
 	DEF wTextBoxID                           EQU $D0EA
 	DEF wItemListPointer                     EQU $D0ED
+	DEF wListCount                           EQU $D0EF
 	DEF wLinkState                           EQU $D0F0
+	DEF wChosenMenuItem                      EQU $D0F2
+	DEF wMenuExitMethod                      EQU $D0F3
 	DEF wPlayerName                          EQU $D11D
+	DEF wPartyCount                          EQU $D123
+	DEF wPartyMonNicks                       EQU $D257
 	DEF wPlayerMoney                         EQU $D2CB
 	DEF wRivalName                           EQU $D2CE
 	DEF wLetterPrintingDelayFlags            EQU $D2D7
@@ -128,8 +151,10 @@ IF DEF(BUILD_JP)
 	DEF wWalkBikeSurfState                   EQU $D67F
 	DEF wStatusFlags2                        EQU $D6AB
 	DEF wStatusFlags4                        EQU $D6AD
+	DEF wStatusFlags5                        EQU $D6AF
 	DEF wStatusFlags6                        EQU $D6B1
 	DEF wPokedexEventByte                    EQU $D6CA
+	DEF wBoxMonNicks                         EQU $DE64
 ENDC
 
 IF DEF(BUILD_WEST)
