@@ -12,6 +12,7 @@ DEF hSerialReceiveData         EQU $FFAD
 DEF hSCX                       EQU $FFAE
 DEF hSCY                       EQU $FFAF
 DEF hWY                        EQU $FFB0
+DEF hJoyPressed                EQU $FFB3
 DEF hJoyHeld                   EQU $FFB4
 DEF hJoy5                      EQU $FFB5
 DEF hLoadedROMBank             EQU $FFB8
@@ -60,6 +61,9 @@ IF DEF(BUILD_JP)
 	DEF wAudioROMBank                        EQU $C0EF
 	DEF wAudioSavedROMBank                   EQU $C0F0
 	DEF wTileMap                             EQU $C3A0
+	DEF wCurrentMenuItem                     EQU $CC26
+	DEF wLastMenuItem                        EQU $CC2A
+	DEF wBattleAndStartSavedMenuItem         EQU $CC2D
 	DEF wRedrawRowOrColumnSrcTiles           EQU $CBFC
 	DEF wDoNotWaitForButtonPressAfterDisplayingText EQU $CC3C
 	DEF wTextDest                            EQU $CC3A
@@ -103,6 +107,8 @@ IF DEF(BUILD_JP)
 	DEF wSpriteOutputPtrCached               EQU $D08C
 	DEF wSpriteDecodeTable0Ptr               EQU $D08E
 	DEF wSpriteDecodeTable1Ptr               EQU $D090
+	DEF wWalkBikeSurfStateCopy               EQU $D0DF
+	DEF wNumSetBits                          EQU $D0E3
 	DEF wVBlankSavedROMBank                  EQU $D0E7
 	DEF wItemListPointer                     EQU $D0ED
 	DEF wLinkState                           EQU $D0F0
@@ -120,6 +126,7 @@ IF DEF(BUILD_JP)
 	DEF wStatusFlags2                        EQU $D6AB
 	DEF wStatusFlags4                        EQU $D6AD
 	DEF wStatusFlags6                        EQU $D6B1
+	DEF wPokedexEventByte                    EQU $D6CA
 ENDC
 
 IF DEF(BUILD_WEST)
