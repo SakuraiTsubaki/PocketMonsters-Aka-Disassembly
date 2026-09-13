@@ -46,13 +46,14 @@ IF DEF(BUILD_JP)
 	DEF sSpriteBuffer2                      EQU $A310
 	DEF SPRITEBUFFERSIZE                    EQU $0188
 
-	; Player/object sprite-state structures used by Bank 00 reset code.
+	; Player/object sprite-state structures used by Bank 00 reset/text code.
 	DEF wSpriteStateData1                   EQU $C100
 	DEF wSpriteStateData2                   EQU $C200
 	DEF SPRITESTATEDATA1_LENGTH             EQU $0010
 	DEF wSpritePlayerStateData1PictureID    EQU $C100
 	DEF wSpritePlayerStateData1YPixels      EQU $C104
 	DEF wSpritePlayerStateData2ImageBaseOffset EQU $C20E
+	DEF wSprite01StateData2OrigFacingDirection EQU $C219
 
 	DEF wChannelSoundIDs                     EQU $C026
 	DEF wNewSoundID                          EQU $C0EE
@@ -60,6 +61,7 @@ IF DEF(BUILD_JP)
 	DEF wAudioSavedROMBank                   EQU $C0F0
 	DEF wTileMap                             EQU $C3A0
 	DEF wRedrawRowOrColumnSrcTiles           EQU $CBFC
+	DEF wDoNotWaitForButtonPressAfterDisplayingText EQU $CC3C
 	DEF wTextDest                            EQU $CC3A
 	DEF wLinkMenuSelectionReceiveBuffer      EQU $CC3D
 	DEF wSerialExchangeNybbleTempReceiveData EQU $CC3D
@@ -67,9 +69,15 @@ IF DEF(BUILD_JP)
 	DEF wSerialExchangeNybbleReceiveData     EQU $CC3E
 	DEF wLinkMenuSelectionSendBuffer         EQU $CC42
 	DEF wSerialExchangeNybbleSendData        EQU $CC42
+	DEF wEnteringCableClub                   EQU $CC47
 	DEF wUnknownSerialCounter                EQU $CC47
 	DEF wNameBuffer                          EQU $CD68
 	DEF wBuffer                              EQU $CEE4
+	DEF wTextPredefFlag                      EQU $CF0C
+	DEF wSpriteIndex                         EQU $CF0E
+	DEF wItemList                            EQU $CF62
+	DEF wListMenuID                          EQU $CF7B
+	DEF wFontLoaded                          EQU $CFAB
 	DEF wEnemyMonNick                        EQU $CFC1
 	DEF wAudioFadeOutControl                 EQU $CFAE
 	DEF wAudioFadeOutCounterReloadValue      EQU $CFAF
@@ -96,6 +104,7 @@ IF DEF(BUILD_JP)
 	DEF wSpriteDecodeTable0Ptr               EQU $D08E
 	DEF wSpriteDecodeTable1Ptr               EQU $D090
 	DEF wVBlankSavedROMBank                  EQU $D0E7
+	DEF wItemListPointer                     EQU $D0ED
 	DEF wLinkState                           EQU $D0F0
 	DEF wPlayerName                          EQU $D11D
 	DEF wRivalName                           EQU $D2CE
@@ -103,9 +112,14 @@ IF DEF(BUILD_JP)
 	DEF wMapMusicSoundID                     EQU $D2DA
 	DEF wMapMusicROMBank                     EQU $D2DB
 	DEF wMapPalOffset                        EQU $D2DC
+	DEF wCurMap                              EQU $D2DD
+	DEF wCurMapTextPtr                       EQU $D2EB
+	DEF wNumSprites                          EQU $D460
+	DEF wMapSpriteData                       EQU $D463
 	DEF wWalkBikeSurfState                   EQU $D67F
 	DEF wStatusFlags2                        EQU $D6AB
 	DEF wStatusFlags4                        EQU $D6AD
+	DEF wStatusFlags6                        EQU $D6B1
 ENDC
 
 IF DEF(BUILD_WEST)
