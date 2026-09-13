@@ -46,6 +46,14 @@ IF DEF(BUILD_JP)
 	DEF sSpriteBuffer2                      EQU $A310
 	DEF SPRITEBUFFERSIZE                    EQU $0188
 
+	; Player/object sprite-state structures used by Bank 00 reset code.
+	DEF wSpriteStateData1                   EQU $C100
+	DEF wSpriteStateData2                   EQU $C200
+	DEF SPRITESTATEDATA1_LENGTH             EQU $0010
+	DEF wSpritePlayerStateData1PictureID    EQU $C100
+	DEF wSpritePlayerStateData1YPixels      EQU $C104
+	DEF wSpritePlayerStateData2ImageBaseOffset EQU $C20E
+
 	DEF wChannelSoundIDs                     EQU $C026
 	DEF wNewSoundID                          EQU $C0EE
 	DEF wAudioROMBank                        EQU $C0EF
@@ -96,6 +104,7 @@ IF DEF(BUILD_JP)
 	DEF wMapMusicROMBank                     EQU $D2DB
 	DEF wMapPalOffset                        EQU $D2DC
 	DEF wWalkBikeSurfState                   EQU $D67F
+	DEF wStatusFlags2                        EQU $D6AB
 	DEF wStatusFlags4                        EQU $D6AD
 ENDC
 
