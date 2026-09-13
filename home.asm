@@ -29,4 +29,6 @@ IF DEF(BUILD_JP)
 	INCLUDE "data/items/jp_marts.asm"
 	INCLUDE "home/jp_overworld_text.asm"
 	INCLUDE "home/jp_uncompress.asm"
+	INCLUDE "home/jp_reset_player_sprite.asm"
+	INCLUDE "home/jp_fade_audio.asm"
 ENDC
