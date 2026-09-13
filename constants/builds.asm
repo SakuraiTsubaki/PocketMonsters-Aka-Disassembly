@@ -23,6 +23,8 @@ IF DEF(AKA_JP_REV0)
 	DEF PlaySoundAddr                 EQU $0E45
 	DEF WaitForSoundToFinishAddr      EQU $3790
 	DEF PlayCryAddr                   EQU $2DC7
+	DEF StopAllSoundsAddr             EQU $0A96
+	DEF GBPalWhiteOutAddr             EQU $3E15
 	DEF HEADER_CART_TYPE              EQU $03
 	DEF HEADER_ROM_SIZE               EQU $04
 	DEF HEADER_RAM_SIZE               EQU $03
@@ -48,6 +50,8 @@ IF DEF(AKA_JP_REVA)
 	DEF PlaySoundAddr                 EQU $0E33
 	DEF WaitForSoundToFinishAddr      EQU $377E
 	DEF PlayCryAddr                   EQU $2DB5
+	DEF StopAllSoundsAddr             EQU $0A96
+	DEF GBPalWhiteOutAddr             EQU $3E03
 	DEF HEADER_CART_TYPE              EQU $03
 	DEF HEADER_ROM_SIZE               EQU $04
 	DEF HEADER_RAM_SIZE               EQU $03
