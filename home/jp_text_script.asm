@@ -155,7 +155,7 @@ AfterDisplayingTextID::
 	call JP_WAIT_TEXT_SCROLL_ADDR
 
 HoldTextDisplayOpen::
-	call JoypadLowSensitivityHome
+	call Joypad
 	ldh a, [hJoyHeld]
 	bit 0, a
 	jr nz, HoldTextDisplayOpen
