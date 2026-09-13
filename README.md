@@ -46,7 +46,8 @@ Recovered so far:
 - Japanese V1.0/V1.1 `$028C-$0358` banked copy and VBlank video-copy helpers
 - Japanese `$0359-$03D1` interruption, tile-area, BG transfer, and screen-clear helpers with revision-dependent call targets preserved
 - Japanese `$03D2-$04C8` text-box renderer, string-control dispatcher, and dakuten/handakuten kana conversion core
+- Japanese `$04C9-$0773` name/control-token expansion, paragraph/scroll logic, `TextCommandProcessor`, sound/cry text commands, and complete text-command jump table
 
-The Japanese reconstruction is now structured continuously from `$0150` through `$04C8` (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
+The Japanese reconstruction is now structured continuously from `$0150` through `$0773` (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
 
-See `analysis/bank00/layout.md` for verified offsets, revision differences, and range hashes.
+See `analysis/bank00/layout.md` and `analysis/bank00/text_engine_04c9_0773.md` for verified offsets, revision differences, and range hashes. The active source is linked from `home.asm`.
