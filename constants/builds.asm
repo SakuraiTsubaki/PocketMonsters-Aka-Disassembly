@@ -7,38 +7,52 @@
 
 IF DEF(AKA_JP_REV0)
 	DEF BUILD_JP EQU 1
-	DEF VBLANK_VECTOR_TARGET       EQU $0AAC
-	DEF TIMER_VECTOR_TARGET        EQU $0D9A
-	DEF SERIAL_VECTOR_TARGET       EQU $0BA7
-	DEF INIT_TARGET                EQU $09DA
-	DEF DelayFrameAddr             EQU $0B31
-	DEF GetRowColAddressBgMapAddr  EQU $0774
-	DEF JoypadLowSensitivityAddr   EQU $3879
-	DEF PrintLetterDelayAddr       EQU $391D
-	DEF Delay3Addr                 EQU $3E07
-	DEF HEADER_CART_TYPE           EQU $03
-	DEF HEADER_ROM_SIZE            EQU $04
-	DEF HEADER_RAM_SIZE            EQU $03
-	DEF HEADER_DEST_CODE           EQU $00
-	DEF HEADER_VERSION             EQU $00
+	DEF VBLANK_VECTOR_TARGET          EQU $0AAC
+	DEF TIMER_VECTOR_TARGET           EQU $0D9A
+	DEF SERIAL_VECTOR_TARGET          EQU $0BA7
+	DEF INIT_TARGET                   EQU $09DA
+	DEF DelayFrameAddr                EQU $0B31
+	DEF GetRowColAddressBgMapAddr     EQU $0774
+	DEF JoypadLowSensitivityAddr      EQU $3879
+	DEF PrintLetterDelayAddr          EQU $391D
+	DEF Delay3Addr                    EQU $3E07
+	DEF ManualTextScrollAddr          EQU $38E1
+	DEF DelayFramesAddr               EQU $3781
+	DEF PrintBCDNumberAddr            EQU $2FC4
+	DEF PrintNumberAddr               EQU $3C8F
+	DEF PlaySoundAddr                 EQU $0E45
+	DEF WaitForSoundToFinishAddr      EQU $3790
+	DEF PlayCryAddr                   EQU $2DC7
+	DEF HEADER_CART_TYPE              EQU $03
+	DEF HEADER_ROM_SIZE               EQU $04
+	DEF HEADER_RAM_SIZE               EQU $03
+	DEF HEADER_DEST_CODE              EQU $00
+	DEF HEADER_VERSION                EQU $00
 ENDC
 
 IF DEF(AKA_JP_REVA)
 	DEF BUILD_JP EQU 1
-	DEF VBLANK_VECTOR_TARGET       EQU $0AAC
-	DEF TIMER_VECTOR_TARGET        EQU $0D88
-	DEF SERIAL_VECTOR_TARGET       EQU $0BA7
-	DEF INIT_TARGET                EQU $09DA
-	DEF DelayFrameAddr             EQU $0B31
-	DEF GetRowColAddressBgMapAddr  EQU $0774
-	DEF JoypadLowSensitivityAddr   EQU $3867
-	DEF PrintLetterDelayAddr       EQU $390B
-	DEF Delay3Addr                 EQU $3DF5
-	DEF HEADER_CART_TYPE           EQU $03
-	DEF HEADER_ROM_SIZE            EQU $04
-	DEF HEADER_RAM_SIZE            EQU $03
-	DEF HEADER_DEST_CODE           EQU $00
-	DEF HEADER_VERSION             EQU $01
+	DEF VBLANK_VECTOR_TARGET          EQU $0AAC
+	DEF TIMER_VECTOR_TARGET           EQU $0D88
+	DEF SERIAL_VECTOR_TARGET          EQU $0BA7
+	DEF INIT_TARGET                   EQU $09DA
+	DEF DelayFrameAddr                EQU $0B31
+	DEF GetRowColAddressBgMapAddr     EQU $0774
+	DEF JoypadLowSensitivityAddr      EQU $3867
+	DEF PrintLetterDelayAddr          EQU $390B
+	DEF Delay3Addr                    EQU $3DF5
+	DEF ManualTextScrollAddr          EQU $38CF
+	DEF DelayFramesAddr               EQU $376F
+	DEF PrintBCDNumberAddr            EQU $2FB2
+	DEF PrintNumberAddr               EQU $3C7D
+	DEF PlaySoundAddr                 EQU $0E33
+	DEF WaitForSoundToFinishAddr      EQU $377E
+	DEF PlayCryAddr                   EQU $2DB5
+	DEF HEADER_CART_TYPE              EQU $03
+	DEF HEADER_ROM_SIZE               EQU $04
+	DEF HEADER_RAM_SIZE               EQU $03
+	DEF HEADER_DEST_CODE              EQU $00
+	DEF HEADER_VERSION                EQU $01
 ENDC
 
 IF DEF(RED_EN_UE)
