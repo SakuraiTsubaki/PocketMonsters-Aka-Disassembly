@@ -56,9 +56,10 @@ Recovered so far:
 - Japanese Timer/audio dispatcher through the end of `PlaySound`: V1.0 `$0D9A-$0EBC`, V1.1 `$0D88-$0EAA`
 - Japanese `UpdateSprites` trampoline, all Bank 00 mart inventory scripts, common overworld sign/item text, and `PickUpItemText`: V1.0 `$0EBD-$0FCD`, V1.1 `$0EAB-$0FBB`
 - Japanese sprite compression/decompression engine, bitstream/RLE decoder, differential decode tables, chunk merge modes, and buffer helpers: V1.0 `$0FCE-$136A`, V1.1 `$0FBC-$1358`
+- Japanese `ResetPlayerSpriteData` and `FadeOutAudio`: V1.0 `$136B-$13F0`, V1.1 `$1359-$13DE`
 
-The Japanese reconstruction is now structured continuously from `$0150` through the end of the sprite decompression engine: **V1.0 through `$136A` and V1.1 through `$1358`** (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
+The Japanese reconstruction is now structured continuously from `$0150` through the end of `FadeOutAudio`: **V1.0 through `$13F0` and V1.1 through `$13DE`** (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
 
-The next routine is `ResetPlayerSpriteData` at V1.0 `$136B` / V1.1 `$1359`, followed by the Bank 00 fade-audio/text-script/start-menu sequence.
+The next routine is the Bank 00 text-script engine, beginning with `RunTextScript` at V1.0 `$13F1` / V1.1 `$13DF`.
 
 See `analysis/bank00/` for verified offsets, revision differences, and range hashes. The active source is linked from `home.asm`.
