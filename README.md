@@ -64,9 +64,10 @@ Recovered so far:
 - Japanese `DisplayListMenuID` list-menu setup/selection/scroll core: V1.0 `$16F7-$1869`, V1.1 `$16E5-$1857`
 - Japanese `DisplayChooseQuantityMenu` quantity/price selector: V1.0 `$186A-$194B`, V1.1 `$1858-$1939`
 - Japanese `ExitListMenu`, `PrintListMenuEntries`, and embedded `やめる` label: V1.0 `$194C-$1AAA`, V1.1 `$193A-$1A98`
+- Japanese Pokémon/item/TM/HM/move name helpers: V1.0 `$1AAB-$1B85`, V1.1 `$1A99-$1B73`
 
-The Japanese reconstruction is now structured continuously from `$0150` through the list-entry renderer: **V1.0 through `$1AAA` and V1.1 through `$1A98`** (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
+The Japanese reconstruction is now structured continuously from `$0150` through the name helpers: **V1.0 through `$1B85` and V1.1 through `$1B73`** (with the cartridge header region handled separately), plus the verified reset/vector and residual ranges before it.
 
-The next Bank 00 routine is `GetMonName` at V1.0 `$1AAB` / V1.1 `$1A99`, followed by `GetItemName` and `GetMoveName`.
+The next Bank 00 routine is `ReloadMapData` at V1.0 `$1B86` / V1.1 `$1B74`.
 
 See `analysis/bank00/` for verified offsets, revision differences, and range hashes. The active source is linked from `home.asm`.

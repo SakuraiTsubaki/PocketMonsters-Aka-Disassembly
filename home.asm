@@ -38,4 +38,5 @@ IF DEF(BUILD_JP)
 	INCLUDE "home/jp_list_menu_core.asm"
 	INCLUDE "home/jp_list_quantity.asm"
 	INCLUDE "home/jp_list_entries.asm"
+	INCLUDE "home/jp_names.asm"
 ENDC
