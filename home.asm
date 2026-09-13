@@ -24,4 +24,5 @@ IF DEF(BUILD_JP)
 	INCLUDE "home/jp_init_vblank.asm"
 	INCLUDE "home/jp_fade.asm"
 	INCLUDE "home/jp_serial.asm"
+	INCLUDE "home/jp_timer_audio.asm"
 ENDC

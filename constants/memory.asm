@@ -15,6 +15,7 @@ DEF hWY                        EQU $FFB0
 DEF hJoyHeld                   EQU $FFB4
 DEF hJoy5                      EQU $FFB5
 DEF hLoadedROMBank             EQU $FFB8
+DEF hSavedROMBank              EQU $FFB9
 DEF hAutoBGTransferEnabled     EQU $FFBA
 DEF hAutoBGTransferPortion     EQU $FFBB
 DEF hAutoBGTransferDest        EQU $FFBC
@@ -40,35 +41,42 @@ DEF wShadowOAM                 EQU $C300
 DEF wShadowOAMEnd              EQU $C3A0
 
 IF DEF(BUILD_JP)
-	DEF wAudioROMBank                         EQU $C0EF
-	DEF wAudioSavedROMBank                    EQU $C0F0
-	DEF wNewSoundID                           EQU $C0EE
-	DEF wTileMap                              EQU $C3A0
-	DEF wRedrawRowOrColumnSrcTiles            EQU $CBFC
-	DEF wTextDest                             EQU $CC3A
-	DEF wLinkMenuSelectionReceiveBuffer       EQU $CC3D
-	DEF wSerialExchangeNybbleTempReceiveData  EQU $CC3D
+	DEF wChannelSoundIDs                     EQU $C026
+	DEF wNewSoundID                          EQU $C0EE
+	DEF wAudioROMBank                        EQU $C0EF
+	DEF wAudioSavedROMBank                   EQU $C0F0
+	DEF wTileMap                             EQU $C3A0
+	DEF wRedrawRowOrColumnSrcTiles           EQU $CBFC
+	DEF wTextDest                            EQU $CC3A
+	DEF wLinkMenuSelectionReceiveBuffer      EQU $CC3D
+	DEF wSerialExchangeNybbleTempReceiveData EQU $CC3D
 	DEF wSerialSyncAndExchangeNybbleReceiveData EQU $CC3D
-	DEF wSerialExchangeNybbleReceiveData      EQU $CC3E
-	DEF wLinkMenuSelectionSendBuffer          EQU $CC42
-	DEF wSerialExchangeNybbleSendData         EQU $CC42
-	DEF wUnknownSerialCounter                 EQU $CC47
-	DEF wNameBuffer                           EQU $CD68
-	DEF wBuffer                               EQU $CEE4
-	DEF wEnemyMonNick                         EQU $CFC1
-	DEF wAudioFadeOutControl                  EQU $CFAE
-	DEF wLastMusicSoundID                     EQU $CFB1
-	DEF wUpdateSpritesEnabled                 EQU $CFB2
-	DEF wBattleMonNick                        EQU $CFF0
-	DEF wUnknownSerialCounter2                EQU $D051
-	DEF wMovingBGTilesCounter2                EQU $D062
-	DEF wDisableVBlankWYUpdate                EQU $D07D
-	DEF wVBlankSavedROMBank                   EQU $D0E7
-	DEF wLinkState                            EQU $D0F0
-	DEF wPlayerName                           EQU $D11D
-	DEF wRivalName                            EQU $D2CE
-	DEF wLetterPrintingDelayFlags             EQU $D2D7
-	DEF wMapPalOffset                         EQU $D2DC
+	DEF wSerialExchangeNybbleReceiveData     EQU $CC3E
+	DEF wLinkMenuSelectionSendBuffer         EQU $CC42
+	DEF wSerialExchangeNybbleSendData        EQU $CC42
+	DEF wUnknownSerialCounter                EQU $CC47
+	DEF wNameBuffer                          EQU $CD68
+	DEF wBuffer                              EQU $CEE4
+	DEF wEnemyMonNick                        EQU $CFC1
+	DEF wAudioFadeOutControl                 EQU $CFAE
+	DEF wAudioFadeOutCounterReloadValue      EQU $CFAF
+	DEF wAudioFadeOutCounter                 EQU $CFB0
+	DEF wLastMusicSoundID                    EQU $CFB1
+	DEF wUpdateSpritesEnabled                EQU $CFB2
+	DEF wBattleMonNick                       EQU $CFF0
+	DEF wUnknownSerialCounter2               EQU $D051
+	DEF wMovingBGTilesCounter2               EQU $D062
+	DEF wDisableVBlankWYUpdate               EQU $D07D
+	DEF wVBlankSavedROMBank                  EQU $D0E7
+	DEF wLinkState                           EQU $D0F0
+	DEF wPlayerName                          EQU $D11D
+	DEF wRivalName                           EQU $D2CE
+	DEF wLetterPrintingDelayFlags            EQU $D2D7
+	DEF wMapMusicSoundID                     EQU $D2DA
+	DEF wMapMusicROMBank                     EQU $D2DB
+	DEF wMapPalOffset                        EQU $D2DC
+	DEF wWalkBikeSurfState                   EQU $D67F
+	DEF wStatusFlags4                        EQU $D6AD
 ENDC
 
 IF DEF(BUILD_WEST)
