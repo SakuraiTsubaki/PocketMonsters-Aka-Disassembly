@@ -22,4 +22,5 @@ IF DEF(BUILD_JP)
 	INCLUDE "home/jp_text_engine.asm"
 	INCLUDE "home/jp_vcopy.asm"
 	INCLUDE "home/jp_init_vblank.asm"
+	INCLUDE "home/jp_fade.asm"
 ENDC
