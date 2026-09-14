@@ -1,7 +1,7 @@
 ---
 name: Verification report
 description: Record build, reconstruction, asset, or matching verification
-ntitle: "[Verification] "
+title: "[Verification] "
 labels: []
 assignees: []
 ---
