@@ -1,0 +1,15 @@
+build_id,role,rom_offset,compressed_bytes,pixel_sha1,asset_prefix,dedup_group
+aka-jp-rev0,front,0x24000,585,c9dbc270728648cb7a125f388762532b7d84ae4d,gfx/pokemon/front/rg/rhydon,rg-front-rhydon
+aka-jp-reva,front,0x24000,585,c9dbc270728648cb7a125f388762532b7d84ae4d,gfx/pokemon/front/rg/rhydon,rg-front-rhydon
+red-en-ue,front,0x24000,514,812e9ceb6dfe39fe142409c9c1b9167e3766d749,gfx/pokemon/front/rb/rhydon,rb-front-rhydon
+red-de,front,0x24000,514,812e9ceb6dfe39fe142409c9c1b9167e3766d749,gfx/pokemon/front/rb/rhydon,rb-front-rhydon
+red-it,front,0x24000,514,812e9ceb6dfe39fe142409c9c1b9167e3766d749,gfx/pokemon/front/rb/rhydon,rb-front-rhydon
+red-es,front,0x24000,514,812e9ceb6dfe39fe142409c9c1b9167e3766d749,gfx/pokemon/front/rb/rhydon,rb-front-rhydon
+red-fr,front,0x24000,514,812e9ceb6dfe39fe142409c9c1b9167e3766d749,gfx/pokemon/front/rb/rhydon,rb-front-rhydon
+aka-jp-rev0,back,0x24249,152,3328b30537595a1ebf878fd6fe571fdafe2b2023,gfx/pokemon/back/shared/rhydon,shared-back-rhydon
+aka-jp-reva,back,0x24249,152,3328b30537595a1ebf878fd6fe571fdafe2b2023,gfx/pokemon/back/shared/rhydon,shared-back-rhydon
+red-en-ue,back,0x24202,152,3328b30537595a1ebf878fd6fe571fdafe2b2023,gfx/pokemon/back/shared/rhydon,shared-back-rhydon
+red-de,back,0x24202,152,3328b30537595a1ebf878fd6fe571fdafe2b2023,gfx/pokemon/back/shared/rhydon,shared-back-rhydon
+red-it,back,0x24202,152,3328b30537595a1ebf878fd6fe571fdafe2b2023,gfx/pokemon/back/shared/rhydon,shared-back-rhydon
+red-es,back,0x24202,152,3328b30537595a1ebf878fd6fe571fdafe2b2023,gfx/pokemon/back/shared/rhydon,shared-back-rhydon
+red-fr,back,0x24202,152,3328b30537595a1ebf878fd6fe571fdafe2b2023,gfx/pokemon/back/shared/rhydon,shared-back-rhydon
