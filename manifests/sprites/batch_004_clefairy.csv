@@ -1,0 +1,15 @@
+build_id,role,rom_offset,compressed_bytes,pixel_sha1,asset_prefix,dedup_group
+aka-jp-rev0,front,0x246C9,219,4c68527cda6d800ca77463aa4f61ef9107374f24,gfx/pokemon/front/rg/clefairy,rg-front-clefairy
+aka-jp-reva,front,0x246C9,219,4c68527cda6d800ca77463aa4f61ef9107374f24,gfx/pokemon/front/rg/clefairy,rg-front-clefairy
+red-en-ue,front,0x24682,259,0b0e0e466ad8e48d48ad7361f1881de9de132f5b,gfx/pokemon/front/rb/clefairy,rb-front-clefairy
+red-de,front,0x24682,259,0b0e0e466ad8e48d48ad7361f1881de9de132f5b,gfx/pokemon/front/rb/clefairy,rb-front-clefairy
+red-it,front,0x24682,259,0b0e0e466ad8e48d48ad7361f1881de9de132f5b,gfx/pokemon/front/rb/clefairy,rb-front-clefairy
+red-es,front,0x24682,259,0b0e0e466ad8e48d48ad7361f1881de9de132f5b,gfx/pokemon/front/rb/clefairy,rb-front-clefairy
+red-fr,front,0x24682,259,0b0e0e466ad8e48d48ad7361f1881de9de132f5b,gfx/pokemon/front/rb/clefairy,rb-front-clefairy
+aka-jp-rev0,back,0x247A4,90,52a1cb8f76e9191aefd7c4f5c09ddde76699738a,gfx/pokemon/back/shared/clefairy,shared-back-clefairy
+aka-jp-reva,back,0x247A4,90,52a1cb8f76e9191aefd7c4f5c09ddde76699738a,gfx/pokemon/back/shared/clefairy,shared-back-clefairy
+red-en-ue,back,0x24785,90,52a1cb8f76e9191aefd7c4f5c09ddde76699738a,gfx/pokemon/back/shared/clefairy,shared-back-clefairy
+red-de,back,0x24785,90,52a1cb8f76e9191aefd7c4f5c09ddde76699738a,gfx/pokemon/back/shared/clefairy,shared-back-clefairy
+red-it,back,0x24785,90,52a1cb8f76e9191aefd7c4f5c09ddde76699738a,gfx/pokemon/back/shared/clefairy,shared-back-clefairy
+red-es,back,0x24785,90,52a1cb8f76e9191aefd7c4f5c09ddde76699738a,gfx/pokemon/back/shared/clefairy,shared-back-clefairy
+red-fr,back,0x24785,90,52a1cb8f76e9191aefd7c4f5c09ddde76699738a,gfx/pokemon/back/shared/clefairy,shared-back-clefairy
