@@ -84,3 +84,16 @@ The Japanese reconstruction is now structured continuously from `$0150` through 
 The next Bank 00 routine is `ReloadMapData` at V1.0 `$1B86` / V1.1 `$1B74`.
 
 See `analysis/bank00/` for verified offsets, revision differences, and range hashes. The active source is linked from `home.asm`.
+
+## 📚 Documentation
+
+| Document | Purpose |
+| --- | --- |
+| [Documentation Hub](docs/README.md) | Central entry point for project documentation |
+| [Project Status](docs/PROJECT_STATUS.md) | Reconstruction and matching status |
+| [Version Coverage](docs/VERSIONS.md) | Supported releases, revisions, sizes, and hashes |
+| [Disassembly Standards](docs/DISASSEMBLY_STANDARDS.md) | Source reconstruction and provenance standards |
+| [Build and Matching](docs/BUILD_AND_MATCHING.md) | Reproducible build and exact-match workflow |
+| [Verification](docs/VERIFICATION.md) | Evidence levels and matching criteria |
+| [Asset Workflow](docs/ASSET_WORKFLOW.md) | Graphics, sprites, deduplication, manifests, and review batches |
+| [Contributing](CONTRIBUTING.md) | Contribution and pull-request guidance |
