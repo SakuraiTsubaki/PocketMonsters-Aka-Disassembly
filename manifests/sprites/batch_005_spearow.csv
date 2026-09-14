@@ -1,0 +1,15 @@
+build_id,role,rom_offset,compressed_bytes,pixel_sha1,asset_prefix,dedup_group
+aka-jp-rev0,front,0x247FE,225,2cdfad09d1b373727c42d4e504cd4835b3fa4114,gfx/pokemon/front/rg/spearow,rg-front-spearow
+aka-jp-reva,front,0x247FE,225,2cdfad09d1b373727c42d4e504cd4835b3fa4114,gfx/pokemon/front/rg/spearow,rg-front-spearow
+red-en-ue,front,0x247DF,227,60c7e4feef774e48ef5a20d737b9399cd542a07b,gfx/pokemon/front/rb/spearow,rb-front-spearow
+red-de,front,0x247DF,227,60c7e4feef774e48ef5a20d737b9399cd542a07b,gfx/pokemon/front/rb/spearow,rb-front-spearow
+red-it,front,0x247DF,227,60c7e4feef774e48ef5a20d737b9399cd542a07b,gfx/pokemon/front/rb/spearow,rb-front-spearow
+red-es,front,0x247DF,227,60c7e4feef774e48ef5a20d737b9399cd542a07b,gfx/pokemon/front/rb/spearow,rb-front-spearow
+red-fr,front,0x247DF,227,60c7e4feef774e48ef5a20d737b9399cd542a07b,gfx/pokemon/front/rb/spearow,rb-front-spearow
+aka-jp-rev0,back,0x248DF,79,e9753ae00058b6404fe5e650ede5c20a6846506a,gfx/pokemon/back/shared/spearow,shared-back-spearow
+aka-jp-reva,back,0x248DF,79,e9753ae00058b6404fe5e650ede5c20a6846506a,gfx/pokemon/back/shared/spearow,shared-back-spearow
+red-en-ue,back,0x248C2,79,e9753ae00058b6404fe5e650ede5c20a6846506a,gfx/pokemon/back/shared/spearow,shared-back-spearow
+red-de,back,0x248C2,79,e9753ae00058b6404fe5e650ede5c20a6846506a,gfx/pokemon/back/shared/spearow,shared-back-spearow
+red-it,back,0x248C2,79,e9753ae00058b6404fe5e650ede5c20a6846506a,gfx/pokemon/back/shared/spearow,shared-back-spearow
+red-es,back,0x248C2,79,e9753ae00058b6404fe5e650ede5c20a6846506a,gfx/pokemon/back/shared/spearow,shared-back-spearow
+red-fr,back,0x248C2,79,e9753ae00058b6404fe5e650ede5c20a6846506a,gfx/pokemon/back/shared/spearow,shared-back-spearow
