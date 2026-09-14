@@ -2,6 +2,19 @@
 
 Complete disassembly and reconstruction project for **Pocket Monsters Aka (Japan)** and the verified international **Pokémon Red** releases.
 
+## Research restart — 2026-09-14
+
+The current research environment has **no local retail ROM images available**. Work therefore proceeds from publicly accessible evidence: public disassemblies and source reconstructions, repository history, official material, technical documentation, maps, graphics, text, audio, release metadata, glitch/unused-data research, archives, and other attributable public sources.
+
+The governing scope is **Japanese releases as the historical origin point, followed by an exhaustive survey of all regional, language, revision, and official re-release variants**. Existing repository claims and earlier analysis are retained as evidence, but are revalidated rather than automatically trusted.
+
+Current restart ledgers:
+
+- [`analysis/public_source_census.md`](analysis/public_source_census.md) — public-source evidence registry and search frontier.
+- [`analysis/public_github_crawl_2026-09-14.md`](analysis/public_github_crawl_2026-09-14.md) — repository/branch/fork discovery and classification queue.
+
+Any older wording below that says ROM files were "supplied" records an earlier analysis state and **does not describe the currently available inputs**.
+
 The goal is to reconstruct each supported ROM into editable source form — code, data, text, graphics, audio, maps, scripts, tables, and build metadata — so a clean clone can eventually reproduce every supported build **without requiring a local `baserom.gb`**.
 
 ROM binaries are read-only source references and are never committed.
