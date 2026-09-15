@@ -1,0 +1,22 @@
+{
+  "scope": "Pocket Monsters Red/Green Japanese front sprites",
+  "policy": "PNG-first public-source reconstruction; ROM binaries are not used or stored.",
+  "upstream": {
+    "repository": "Narishma-gb/pokegreen",
+    "ref": "master",
+    "path": "gfx/pokemon/front"
+  },
+  "batches": [
+    {
+      "id": "001-005",
+      "status": "verified-and-committed",
+      "files": [
+        {"dex": 1, "file": "bulbasaur.png", "source_blob_sha": "1a4676a19169a5ed5631dadf84d4fec3838dc3e1"},
+        {"dex": 2, "file": "ivysaur.png", "source_blob_sha": "337bc27d052919d2edad490282b325663412c74e"},
+        {"dex": 3, "file": "venusaur.png", "source_blob_sha": "f444a234dc73ab73b32e7f18c6dcb965f81a17a9"},
+        {"dex": 4, "file": "charmander.png", "source_blob_sha": "153f93813690bca995d96f7fc513fb333e6bceae"},
+        {"dex": 5, "file": "charmeleon.png", "source_blob_sha": "f60d129481801c8268b950f8edd147d5594201c3"}
+      ]
+    }
+  ]
+}
