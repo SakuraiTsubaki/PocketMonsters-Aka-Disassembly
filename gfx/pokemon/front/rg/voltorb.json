@@ -1,0 +1,9 @@
+{
+  "rom_offset": "0x2492E",
+  "compressed_bytes": 138,
+  "width_tiles": 5,
+  "pixel_size": 40,
+  "pic_sha1": "5803154fc59291ec5b6a574221242a87d4401984",
+  "2bpp_sha1": "b2c5e73963f7f8e75bc9d164ee7b20df9616507a",
+  "png_sha1": "67b4b3cd89e4be6a1b2c4ed76be5834eeab159db"
+}

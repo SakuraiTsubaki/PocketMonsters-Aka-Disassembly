@@ -1,16 +1,30 @@
+# ROM images
 *.gb
 *.gbc
 *.gba
-*.nds
-*.rom
-*.iso
-*.srl
-*.key
-*.keys
-.cache/
-.tmp/
-tmp/
+
+# Save / emulator state
+*.sav
+*.srm
+*.rtc
+*.sgm
+*.sg?
+*.sn?
+
+# RGBDS build outputs
+*.o
+*.map
+*.sym
+*.noi
+
+# Generated / temporary binaries
 build/
-dist/
+out/
+tmp/
+*.bin.tmp
+
+# Tool caches
 __pycache__/
 *.pyc
+.DS_Store
+Thumbs.db

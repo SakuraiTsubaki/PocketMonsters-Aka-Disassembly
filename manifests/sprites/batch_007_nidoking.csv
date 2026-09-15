@@ -1,0 +1,15 @@
+build_id,role,rom_offset,compressed_bytes,pixel_sha1,asset_prefix,dedup_group
+aka-jp-rev0,front,0x24A16,597,e7e8165f37e72a26c185811d4a4ebf8519b9606e,gfx/pokemon/front/rg/nidoking,rg-front-nidoking
+aka-jp-reva,front,0x24A16,597,e7e8165f37e72a26c185811d4a4ebf8519b9606e,gfx/pokemon/front/rg/nidoking,rg-front-nidoking
+red-en-ue,front,0x249F8,616,031ef74f4e3fcf34da2f6d197cc2d754d8cfb6d9,gfx/pokemon/front/rb/nidoking,rb-front-nidoking
+red-de,front,0x249F8,616,031ef74f4e3fcf34da2f6d197cc2d754d8cfb6d9,gfx/pokemon/front/rb/nidoking,rb-front-nidoking
+red-it,front,0x249F8,616,031ef74f4e3fcf34da2f6d197cc2d754d8cfb6d9,gfx/pokemon/front/rb/nidoking,rb-front-nidoking
+red-es,front,0x249F8,616,031ef74f4e3fcf34da2f6d197cc2d754d8cfb6d9,gfx/pokemon/front/rb/nidoking,rb-front-nidoking
+red-fr,front,0x249F8,616,031ef74f4e3fcf34da2f6d197cc2d754d8cfb6d9,gfx/pokemon/front/rb/nidoking,rb-front-nidoking
+aka-jp-rev0,back,0x24C6B,170,563ac7db54720fee4a0d4d933da99e06fc240bea,gfx/pokemon/back/shared/nidoking,shared-back-nidoking
+aka-jp-reva,back,0x24C6B,170,563ac7db54720fee4a0d4d933da99e06fc240bea,gfx/pokemon/back/shared/nidoking,shared-back-nidoking
+red-en-ue,back,0x24C60,170,563ac7db54720fee4a0d4d933da99e06fc240bea,gfx/pokemon/back/shared/nidoking,shared-back-nidoking
+red-de,back,0x24C60,170,563ac7db54720fee4a0d4d933da99e06fc240bea,gfx/pokemon/back/shared/nidoking,shared-back-nidoking
+red-it,back,0x24C60,170,563ac7db54720fee4a0d4d933da99e06fc240bea,gfx/pokemon/back/shared/nidoking,shared-back-nidoking
+red-es,back,0x24C60,170,563ac7db54720fee4a0d4d933da99e06fc240bea,gfx/pokemon/back/shared/nidoking,shared-back-nidoking
+red-fr,back,0x24C60,170,563ac7db54720fee4a0d4d933da99e06fc240bea,gfx/pokemon/back/shared/nidoking,shared-back-nidoking
