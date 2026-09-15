@@ -1,8 +1,6 @@
-; Byte-exact starting point. Replace each INCBIN range with labeled source as
-; that bank is disassembled. Fixed section addresses prevent linker movement.
+; Bank include map. Replace INCBIN ranges with labeled RGBDS source as each bank is reconstructed.
 
-SECTION "Bank 00", ROM0[$0000]
-INCBIN BASEROM, $00000, $4000
+INCLUDE "src/banks/bank00.asm"
 
 SECTION "Bank 01", ROMX[$4000], BANK[$01]
 INCBIN BASEROM, $04000, $4000
