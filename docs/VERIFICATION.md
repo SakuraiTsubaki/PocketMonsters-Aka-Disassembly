@@ -1,35 +1,25 @@
-# Verification Guide
+# Verification
 
-Verification should make every important reconstruction claim traceable to an identified target and repeatable evidence.
+Verification claims should be reproducible and scoped to a specific target.
 
-## Verification levels
+## Levels
 
-- **Unverified** — proposed, imported, or inferred but not independently checked.
-- **Observed** — confirmed directly in the identified target, extracted data, runtime behavior, or trusted comparison material.
-- **Reconstructed** — editable project source reproduces the observed local structure, data, or behavior using documented steps.
-- **Matched** — the reconstructed output satisfies a defined exact-match criterion against the identified target.
+### Observed
 
-## Minimum evidence
+A fact was directly confirmed from target evidence.
 
-When practical, record:
+### Reproduced
 
-- target version / region / language / revision
-- expected hash or stable identifier
-- bank, section, address, offset, symbol, file path, table index, or asset identifier
-- commands, scripts, and tool versions used
-- expected and actual output
-- hashes, byte comparisons, diffs, logs, screenshots, or test results
-- known limitations or unresolved mismatches
+A documented process independently recreates the expected structure, asset, data, code behavior, or intermediate result.
 
-## Rules
+### Matched
 
-1. Do not treat hypotheses as confirmed findings.
-2. Do not call material `Matched` without an exact comparison criterion.
-3. Keep version-specific findings tied to the correct target.
-4. Record meaningful mismatches instead of hiding or normalizing them.
-5. Prefer reproducible commands and committed tooling over undocumented manual steps.
-6. Keep retail ROM images and rebuilt ROM images outside the repository.
+The reproduced result satisfies an explicit matching criterion such as exact bytes, hash equality, exact decoded structure, or a documented deterministic comparison.
 
-## Scope of verification
+## Evidence
 
-Verification may apply at multiple levels: a field, table, asset, routine, bank or section, subsystem, or complete build. State the scope explicitly so a local match is not mistaken for a whole-project match.
+Record the target identity, method, commands/tools, expected result, actual result, and hashes or reports when applicable.
+
+## Build matching
+
+When a build is possible, document toolchain assumptions and distinguish partial/section matches from whole-image matches. Retail or rebuilt playable ROM images must not be committed merely to demonstrate a match.

@@ -1,25 +1,20 @@
 # Research Guide
 
-## Evidence first
+## Record the target
 
-Record the exact target associated with a technical claim. Useful evidence can include bank/section, address, file offset, symbol, table index, hash, byte comparison, build log, extraction command, or independently reproducible behavior.
+Every substantial finding should identify the relevant game version, revision, region, language, release, bank, section, address, archive/member, or other stable locator when known.
 
-## Confidence
+## Separate confidence levels
 
-Keep hypotheses clearly separate from confirmed observations. Do not silently turn a guessed symbol name, format interpretation, or cross-version assumption into project fact.
+- **Hypothesis** — plausible but not yet directly demonstrated.
+- **Observed** — directly seen in source evidence.
+- **Reproduced** — independently regenerated or repeated with documented steps.
+- **Matched** — reproduced output matches the expected bytes, hash, structure, or behavior under the stated criterion.
 
-## Naming
+## Preserve provenance
 
-Prefer stable descriptive names for confirmed behavior. If a name is provisional, document that uncertainty rather than presenting it as original or authoritative terminology.
+Record commands, tools, hashes, offsets, symbols, public references, or other evidence needed for another contributor to understand where a result came from.
 
-## Version scope
+## Unknown information
 
-When findings differ between revisions, regions, or languages, preserve those differences explicitly. Shared behavior should be shared only when evidence supports it.
-
-## Reproducibility
-
-A useful research note should let another contributor locate the same material and repeat the relevant comparison or extraction with documented inputs and tools.
-
-## Asset research
-
-For graphics, sprites, text, maps, audio, and other assets, record provenance and use hashes/byte comparison before deduplicating apparently identical variants. Include reviewable PNGs for sprite/graphics work when practical.
+Use `unknown` or `TBD`. Never fill gaps with invented metadata.

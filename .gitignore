@@ -1,30 +1,45 @@
-# ROM images
+# Retail game images / dumps
 *.gb
 *.gbc
 *.gba
+*.nds
+*.3ds
+*.cia
+*.cci
+*.cxi
+*.nsp
+*.xci
+*.nca
+*.iso
+*.gcm
+*.rvz
+*.wbfs
+baserom.*
+baserom_*
+original_rom.*
 
-# Save / emulator state
-*.sav
-*.srm
-*.rtc
-*.sgm
-*.sg?
-*.sn?
+# Keys and sensitive console material
+prod.keys
+title.keys
+*.keys
+keys/
 
-# RGBDS build outputs
-*.o
-*.map
-*.sym
-*.noi
+# Local dumps and scratch data
+dump/
+dumps/
+.local/
+.cache/
 
-# Generated / temporary binaries
+# Build output
 build/
 out/
-tmp/
-*.bin.tmp
+dist/
 
-# Tool caches
+# Python caches
 __pycache__/
-*.pyc
+*.py[cod]
+
+# IDE / OS clutter
+.idea/
 .DS_Store
 Thumbs.db

@@ -1,15 +1,19 @@
 # Repository Structure
 
-The existing source tree reflects the architecture and history of this specific disassembly. Do not rename or reorganize established source directories merely to resemble another game or generation.
+The repository starts intentionally small. Directories are added when real project material exists.
 
-## Principles
+## Expected long-term areas
 
-- preserve established build paths and source include relationships;
-- add new directories only when they contain real project material;
-- keep target-specific differences close to the relevant source or metadata;
-- keep analysis, manifests, checksums, tools, and tests discoverable without moving working source unnecessarily;
-- document structural changes that affect builds, extraction, or matching.
+- `asm/` — reconstructed assembly/source when appropriate for the target
+- `data/` — structured game data and editable tables
+- `assets/` — reconstructed or extracted reviewable assets
+- `tools/` — extraction, conversion, build, and verification tooling
+- `tests/` — reproducibility and regression checks
+- `manifests/` — structured provenance, identity, and asset metadata
+- `docs/` — research, format, workflow, and verification documentation
 
-Common concepts may include assembly/source, data, graphics/assets, tools, tests, manifests, checksums, symbols, analysis, and documentation, but their actual directory names should follow the verified repository architecture.
+These names describe responsibilities, not a mandate to imitate another generation's project tree. The verified architecture of the target determines the detailed layout.
 
-When proposing a major restructure, explain the migration, build impact, and verification plan before moving established files.
+## Stability
+
+Avoid repository-wide structural version churn. Improve policy and documentation in place. Git history is the historical record; the live tree should represent the current structure only.

@@ -1,9 +1,5 @@
 {
-  "schema_version": 1,
-  "kind": "asset",
-  "asset_id": "TBD",
-  "repository_path": "TBD",
-  "category": "TBD",
+  "id": "example-asset",
   "target": {
     "game": "TBD",
     "region": "TBD",
@@ -11,25 +7,19 @@
     "revision": "TBD"
   },
   "source": {
-    "bank": null,
-    "section": null,
-    "address": null,
-    "offset": null,
-    "range": null,
-    "table_index": null,
-    "symbol": null,
-    "archive_path": null
+    "locator": "TBD",
+    "sha256": null
   },
-  "representation": {
-    "format": "TBD",
-    "size_bytes": null,
+  "output": {
+    "path": "assets/TBD",
     "sha256": null
   },
   "generation": {
-    "tool": null,
-    "command": null
+    "tool": "TBD",
+    "command": "TBD"
   },
-  "verification": "Unverified",
-  "shared_with": [],
-  "notes": "Replace placeholders only with verified information."
+  "verification": {
+    "level": "hypothesis",
+    "notes": "Replace all TBD fields with verified data when the artifact is created."
+  }
 }

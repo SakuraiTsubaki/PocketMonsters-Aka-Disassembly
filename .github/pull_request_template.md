@@ -1,21 +1,22 @@
 ## Summary
 
-Describe what was reconstructed, documented, renamed, verified, or reorganized.
+Describe the change and the part of the project it affects.
 
-## Target scope
+## Target coverage
 
-List the affected game version(s), region(s), language(s), and revision(s).
+List relevant versions, revisions, regions, languages, banks, sections, or assets.
+
+## Evidence and provenance
+
+Explain how the change was derived and cite reproducible evidence where applicable.
 
 ## Verification
 
-Explain how the change was checked: build/hash comparison, bank/section/range comparison, tests, byte comparison, screenshots/PNG review, or other evidence.
+- [ ] Documentation links checked
+- [ ] Generated files can be reproduced
+- [ ] Relevant hashes/comparisons recorded
+- [ ] No retail ROM image or equivalent game image is included
 
-## Checklist
+## Notes
 
-- [ ] No retail/rebuilt ROM images, console keys, or redistributable game binaries are included
-- [ ] Target/revision scope is documented
-- [ ] Hypotheses are distinguished from confirmed findings
-- [ ] Real regional/language/revision differences are preserved
-- [ ] Generated output is reproducible or documented where practical
-- [ ] Manifests/checksums/docs were updated when relevant
-- [ ] Graphics/sprite changes include reviewable PNGs when practical
+Call out uncertainty, follow-up work, or known limitations.

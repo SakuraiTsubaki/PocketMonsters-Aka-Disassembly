@@ -1,49 +1,31 @@
 # Project Standards
 
-This document defines shared organizational standards for the disassembly project. It complements `DISASSEMBLY_STANDARDS.md` by covering naming, assets, manifests, provenance, generated material, and repository boundaries.
+These standards define the common baseline for the repository.
 
-## Naming
+## Naming and layout
 
-- Prefer stable, descriptive names over temporary labels when an identity is verified.
-- Preserve original identifiers, addresses, banks, section names, table indices, and other source-facing identifiers where they are useful for reproducibility.
-- Mark uncertain names or interpretations explicitly instead of presenting guesses as facts.
-- Keep version-, region-, language-, and revision-specific material clearly scoped when bytes or behavior differ.
+- Use stable, descriptive, machine-friendly paths.
+- Prefer ASCII-safe generic directory and tooling names unless verified source conventions require otherwise.
+- Avoid spaces in machine-oriented paths.
+- Preserve meaningful original IDs, indices, symbols, and archive/member identifiers.
+- Represent material region, language, revision, release, or version differences in paths or metadata.
+- Do not force another generation or platform's internal layout onto this target.
 
 ## Source and generated material
 
-- Prefer editable source representations and reproducible conversion steps over opaque derived files.
-- Generated files may be tracked when they are useful project artifacts, evidence, or human-reviewable assets and their origin is documented.
-- Disposable build output, local caches, and scratch dumps should remain outside version control.
-- Retail or rebuilt ROM images are never repository artifacts.
+- Prefer editable source plus reproducible conversion over opaque output.
+- Generated files should identify their source and generation method.
+- Keep scripts and tools required to regenerate important outputs.
+- Human-reviewable previews such as PNG files are welcome when provenance remains clear.
 
-## Assets
+## Deduplication
 
-Graphics, sprites, text, maps, audio, scripts, tables, and other recovered content should retain enough provenance to reproduce or locate them again. Human-viewable PNGs should accompany sprite/graphics reconstruction when practical.
+Store byte-identical material once when practical and reference it from manifests or indexes. Visual similarity alone is not sufficient evidence for deduplication.
 
-Do not deduplicate assets merely because they look or sound identical. Verify byte identity or cryptographic hashes when practical. When identical material is stored once, preserve target-specific provenance through metadata or manifests.
+## Evidence
 
-## Manifests
+Separate confirmed observations from hypotheses. Use `unknown` or `TBD` rather than inventing metadata. Record hashes, addresses, offsets, symbols, commands, or other evidence when they materially support a claim.
 
-Manifest entries should use stable identifiers and may record:
+## Repository safety
 
-- target/release, region, language, and revision;
-- repository path and logical asset/source identifier;
-- bank, section, address, range, offset, table index, archive path, or symbol;
-- file size and cryptographic hashes;
-- extraction/conversion tool and command;
-- verification level;
-- shared byte-identical usage and notes.
-
-Unknown fields should remain `null`, `TBD`, or `unknown` rather than being invented. See `../manifests/README.md` and `../manifests/example.asset-manifest.json`.
-
-## Provenance and verification
-
-Meaningful research claims should identify the target and enough evidence to reproduce the observation. Use the verification terminology in `VERIFICATION.md`: **Unverified**, **Observed**, **Reconstructed**, and **Matched**.
-
-## Repository structure
-
-Preserve each repository's verified architecture instead of forcing directory names copied from another generation. New directories should be introduced when real project material needs them, not as empty decoration.
-
-## Reviewability
-
-Prefer small, coherent commits and asset batches. Structural changes should update the relevant documentation, manifests, or verification records in the same change when practical.
+Do not commit retail ROM images, rebuilt playable ROM images, console keys, or equivalent complete game-image containers. Reconstructed source, analysis, tooling, manifests, documentation, patches, and reviewable derived assets are allowed when appropriate.

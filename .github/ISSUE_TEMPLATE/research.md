@@ -1,27 +1,33 @@
 ---
-name: Research request
-description: Track a focused disassembly research question or reconstruction task
-title: "[Research] "
-labels: []
-assignees: []
+name: Research finding
+about: Record a reverse-engineering observation or research lead
+title: "research: "
+labels: research
 ---
 
 ## Target
 
-Game/version/region/language/revision:
+Version, revision, region, language, and relevant address/bank/section if known.
 
-## Area
+## Finding
 
-Bank, section, address range, symbol, table, asset, script, map, audio, or other target:
+Describe the observation clearly.
 
 ## Evidence
 
-Known offsets, hashes, comparisons, source references, logs, screenshots, or related notes:
-
-## Questions / tasks
-
-- [ ]
+List reproducible evidence, tools, hashes, offsets, symbols, screenshots, or references.
 
 ## Confidence
 
-Clearly separate confirmed observations from hypotheses.
+- [ ] Hypothesis
+- [ ] Observed
+- [ ] Reproduced
+- [ ] Matched
+
+## Reproduction
+
+Steps another contributor can follow.
+
+## Notes
+
+Related issues, manifests, or documentation.

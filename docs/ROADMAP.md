@@ -1,33 +1,25 @@
 # Roadmap
 
-## Phase 1 — Target inventory
+## Phase 1 — Baseline inventory
 
-- identify supported releases, regions, languages, and revisions
-- record sizes and authoritative hashes
-- document build/toolchain requirements
+Identify supported versions, regions, languages, revisions, releases, and hashes.
 
-## Phase 2 — Layout and source mapping
+## Phase 2 — Architecture mapping
 
-- map banks, sections, executable ranges, tables, and asset regions
-- establish stable symbols and source boundaries
-- distinguish shared and target-specific material
+Map ROM layout, banks/sections, executable regions, data structures, pointers, containers, and other target-specific organization.
 
-## Phase 3 — Structured reconstruction
+## Phase 3 — Source reconstruction
 
-- replace understood opaque/raw regions with readable assembly or editable data
-- reconstruct scripts, text, graphics, audio, maps, and tables where applicable
-- preserve revision/localization differences explicitly
+Reconstruct code, data, scripts, text, and formats into readable and editable project source.
 
-## Phase 4 — Reproducible build
+## Phase 4 — Assets and systems
 
-- build from documented source and tools without committed retail ROM images
-- localize mismatches by bank, section, range, object, or asset
-- keep reproducible checksums and comparison evidence
+Document and reconstruct graphics, audio, maps, UI, events, and other game systems with provenance.
 
-## Phase 5 — Matching and stabilization
+## Phase 5 — Build and verification
 
-- satisfy exact-match criteria for supported targets
-- reduce undocumented assumptions and one-off local steps
-- keep manifests, tests, documentation, and status records synchronized
+Add reproducible tooling, regression checks, and exact or criterion-based matching where technically appropriate.
 
-Milestones should reflect verified progress rather than target dates guessed in advance.
+## Phase 6 — Coverage expansion
+
+Expand across verified regional, language, revision, or release differences without flattening meaningful variants.
