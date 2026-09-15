@@ -1,0 +1,53 @@
+{
+  "species": {
+    "national_dex": 1,
+    "name": "Bulbasaur"
+  },
+  "repository": "PocketMonsters-Aka-Disassembly",
+  "status": "draft",
+  "status_note": "Stage-1 Generation III adaptation. Palette/format/battle placement are valid; pixel-art reconstruction still requires manual review before final.",
+  "source": {
+    "generation": 1,
+    "front_family": "rg",
+    "front_git_blob_sha": "1a4676a19169a5ed5631dadf84d4fec3838dc3e1",
+    "front_png_sha256": "c13fdde86398399e99c6a5f86868a36514a27b09f6535b65388a42588d5f026c",
+    "back_family": "gen1_shared",
+    "back_git_blob_sha": "dbe2e487122377e56b6d1df639c9b2a1b52911d9",
+    "back_png_sha256": "0aa1b8005ba28fc813eac877fb4f52cd1d44631b86d6bff453fa66246e2ad969"
+  },
+  "target": {
+    "generation": 3,
+    "profile": "FRLG",
+    "canvas": [64,64],
+    "front_coord_size": [40,40],
+    "front_y_offset": 16,
+    "back_coord_size": [48,32],
+    "back_y_offset": 16,
+    "bpp": 4,
+    "palette_entries": 16,
+    "transparent_index": 0,
+    "raw_frame_size": 2048,
+    "compression": "GBA LZ77 type 0x10"
+  },
+  "adaptation": {
+    "front": {
+      "source_bbox": [2,4,35,36],
+      "adapted_bbox": [14,16,47,48],
+      "scaled": false
+    },
+    "back": {
+      "source_bbox": [0,9,28,28],
+      "adapted_bbox": [10,17,55,48],
+      "scaled": true,
+      "scale": 1.6071428571428572,
+      "method": "nearest-neighbor draft only"
+    },
+    "palette_anchor": "pret/pokefirered graphics/pokemon/bulbasaur/normal.pal",
+    "color_mapping": "FRLG palette role mapping; outline/body/bulb separated from Gen I grayscale source",
+    "manual_pixel_review_required": true
+  },
+  "deduplication": {
+    "front_unique_families_across_RGBY": ["rg","blue","yellow"],
+    "back_shared_across_RGBY": true
+  }
+}

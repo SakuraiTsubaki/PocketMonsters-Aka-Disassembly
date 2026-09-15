@@ -1,0 +1,21 @@
+{
+  "front.png": {"bytes":1191,"sha256":"6a7d57f5fc02734985546340f158543829400e1a9f424f34f28ad04d0cbef6c2"},
+  "back.png": {"bytes":1107,"sha256":"38f204aebab4741e6023b600e553f7a816d1324fb5243f3029ed22bda66d6285"},
+  "normal.pal": {"bytes":190,"sha256":"77bb91fcdfd9f8144a7a1a9d4c436af38c53374641bc542375456a967db132e6"},
+  "normal.gbapal": {"bytes":32,"sha256":"1c3af0846ccae51783ed33e18f160ac1fe8e56d1a3ae687d8a947cad2dfd962b"},
+  "front.4bpp": {"bytes":2048,"sha256":"086d1b2d732921629b4d18d72775638fdbf5b54eb177cb4ba71a59961aa99960"},
+  "back.4bpp": {"bytes":2048,"sha256":"9762ed92204dd09af839a637f1ac54f8c7a4dfdac9eddb260a38ba6f04537a0e"},
+  "front.4bpp.lz": {"bytes":628,"sha256":"941a1e33d9319ade4960d0c97eb9e472bdd7c18837925a16cf81969407ea6685"},
+  "back.4bpp.lz": {"bytes":544,"sha256":"75593da299a0ef65a534aaccff478b99348510ebf35da110c9acdfd1ba1e657e"},
+  "checks": {
+    "front_canvas_64x64": true,
+    "back_canvas_64x64": true,
+    "front_raw_size_0x800": true,
+    "back_raw_size_0x800": true,
+    "front_lz_roundtrip": true,
+    "back_lz_roundtrip": true,
+    "transparent_index_0": true,
+    "palette_entries": 16,
+    "final_pixel_review": "PENDING"
+  }
+}
