@@ -1,66 +1,83 @@
 # Pocket Monsters Aka — Disassembly
 
-![Status](https://img.shields.io/badge/status-initial_setup-lightgrey)
+![Status](https://img.shields.io/badge/status-INCBIN_baseline-blue)
 ![Project](https://img.shields.io/badge/project-disassembly-blue)
 ![ROMs](https://img.shields.io/badge/ROM_binaries-not_included-success)
 
-Disassembly and source-reconstruction project for **Pocket Monsters Aka / Pokémon Red**.
+Independent, verification-first disassembly and source-reconstruction project
+for the two Japanese releases of **Pocket Monsters Aka / Pokémon Red**.
 
-## 🎯 Goals
+## Current baseline
 
-- Reconstruct game code and data into readable, editable assembly/source form.
-- Document ROM, bank, section, data, script, asset, and version differences.
-- Keep analysis, tooling, metadata, and documentation reproducible.
-- Build a clean foundation for long-term reverse-engineering work.
+- Pocket Monsters Aka (Japan), header revision 0
+- Pocket Monsters Aka (Japan) (Rev A), header revision 1
+- 32 fixed 16 KiB banks per revision
+- Complete RGBDS `INCBIN` coverage from bank `$00` through bank `$1F`
+- Known-input and rebuilt-output hashes checked separately
+- ROM files never committed
 
-## 🚧 Status
+This first milestone intentionally preserves every byte. Banks will be replaced
+incrementally with labeled RGBDS source while every commit continues to rebuild
+the exact target ROM.
 
-This repository is in its **initial setup** stage. Source reconstruction and documentation will be added progressively.
+## Local ROM setup
 
-## 🗂️ Planned scope
+Create `baseroms/` and place the read-only originals at:
 
-- ROM, bank, section, and code analysis
-- Game data structures
-- Scripts and event data
-- Graphics and asset metadata
-- Audio and resource formats
-- Maps and world data
-- Tools, notes, manifests, and verification data
+```text
+baseroms/pocket_monsters_aka_japan.gb
+baseroms/pocket_monsters_aka_japan_rev_a.gb
+```
 
-## 📌 Repository policy
+Expected SHA-1 values:
 
-ROM images and redistributed ROM binaries are **not included**. The repository is intended for reconstructed source, extracted/recreated project data, tooling, analysis, and documentation.
+```text
+0623ad12f48c259447980d68bd85ddbf8204b2cd  pocket_monsters_aka_japan.gb
+ef74c79cded14204ac79e77f4964d9cb25003120  pocket_monsters_aka_japan_rev_a.gb
+```
 
-## 🧭 Roadmap
+## Build and verify
 
-- [ ] Establish baseline version/revision inventory
-- [ ] Map ROM, bank, section, and data structures
-- [ ] Begin source reconstruction
-- [ ] Document assets, scripts, and formats
-- [ ] Add build, matching, verification, and reproducibility workflow
+Required tools are RGBDS (`rgbasm`, `rgblink`), Python 3, and GNU Make.
 
-## 📚 Documentation
+```sh
+make verify-inputs
+make
+make verify
+```
+
+`make` does not run `rgbfix`: the cartridge header is part of the source image
+and must remain byte-identical.
+
+## Repository structure
+
+```text
+src/                 RGBDS entry points and common 32-bank layout
+tools/               ROM inventory and digest verification tools
+docs/                Project policy, inventory, and revision analysis
+```
+
+## Documentation
 
 | Document | Purpose |
 | --- | --- |
+| [ROM inventory](docs/ROM_INVENTORY.md) | Exact identities of all supplied Red releases |
+| [Revision comparison](docs/REVISION_COMPARISON.md) | Bank-level Japanese Rev 0 / Rev A differences |
 | [Project status](docs/PROJECT_STATUS.md) | Current stage, coverage, validation level, and next milestones |
-| [Roadmap](docs/ROADMAP.md) | Recommended disassembly phases and long-term progression |
+| [Roadmap](docs/ROADMAP.md) | Disassembly phases and long-term progression |
 | [Version coverage](docs/VERSIONS.md) | Regions, languages, revisions, releases, builds, and hashes |
 | [Research guide](docs/RESEARCH_GUIDE.md) | Evidence, confidence, and research-recording workflow |
 | [Verification guide](docs/VERIFICATION.md) | Standards for Observed, Reproduced, and Matched results |
 | [Repository structure](docs/REPOSITORY_STRUCTURE.md) | Intended long-term source, data, asset, tooling, and manifest layout |
 | [Documentation hub](docs/README.md) | Entry point for format, code, script, asset, version, and verification notes |
 
-## 🧱 Repository structure
+## Repository policy
 
-As real project material is reconstructed, the repository may grow into areas such as `asm/`, `data/`, `assets/`, `tools/`, `tests/`, and `manifests/`. Empty directory trees are not created only for appearance, and platform-specific structure should follow verified target architecture rather than another generation's layout.
+The checked-in tree contains handwritten project files only. Original ROMs,
+raw bank dumps, and other copyrighted binary payloads stay outside version
+control. Future extracted assets must be reviewed before distribution.
 
-See [Repository Structure](docs/REPOSITORY_STRUCTURE.md) for the full organization policy.
+Research findings identify the relevant target revision and clearly separate
+hypotheses from observed, reproduced, or matched results. See
+[CONTRIBUTING.md](CONTRIBUTING.md) for contribution rules.
 
-## 🔬 Research and verification
-
-Research findings should identify the relevant target version or revision and clearly separate hypotheses from observed, reproduced, or matched results. Use the repository's Research and Verification issue templates when tracking substantial findings.
-
-## 🤝 Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution rules, evidence expectations, commit guidance, and pull-request requirements.

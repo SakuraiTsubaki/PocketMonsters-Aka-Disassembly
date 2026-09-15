@@ -16,6 +16,7 @@
 *.wbfs
 baserom.*
 baserom_*
+baseroms/
 original_rom.*
 
 # Keys and sensitive console material
@@ -34,6 +35,9 @@ dumps/
 build/
 out/
 dist/
+*.o
+*.map
+*.sym
 
 # Python caches
 __pycache__/
@@ -43,3 +47,4 @@ __pycache__/
 .idea/
 .DS_Store
 Thumbs.db
+
