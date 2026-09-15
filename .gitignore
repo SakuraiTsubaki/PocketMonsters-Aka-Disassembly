@@ -1,0 +1,16 @@
+*.gb
+*.gbc
+*.gba
+*.nds
+*.rom
+*.iso
+*.srl
+*.key
+*.keys
+.cache/
+.tmp/
+tmp/
+build/
+dist/
+__pycache__/
+*.pyc

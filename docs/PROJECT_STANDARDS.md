@@ -1,0 +1,3 @@
+# Project Standards
+
+Preserve verified native architecture, labels, addresses, IDs, tables, banks, sections, and version distinctions where meaningful. Do not imitate another generation's tree merely for consistency. Prefer editable assembly/source plus reproducible extraction and matching tools. Unknowns stay explicit; observation and hypothesis stay separate. Deduplicate only after byte/hash proof. Keep one live structure: no `vN`, `PRE-VN`, `MIGRATED`, or parallel legacy trees. One canonical home per artifact. No complete retail/rebuilt ROMs.
