@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "project": "PocketMonsters-Aka-Disassembly",
+  "workflow": "disassembly",
+  "stage": "active_bank_disassembly",
+  "current_unit": "Bank 00",
+  "next_address": "0x01C4",
+  "next_actions": [
+    "Continue Bank 00 from 0x01C4 forward.",
+    "Separate code from tables/data and record Rev 0 / Rev A divergence points explicitly.",
+    "Run RGBDS rebuild verification for reconstructed ranges before promoting them to Matched.",
+    "Keep all unreconstructed bytes under the byte-exact INCBIN baseline."
+  ],
+  "evidence": ["docs/PROJECT_STATUS.md", "src/banks/bank00.asm"],
+  "status": "active"
+}
