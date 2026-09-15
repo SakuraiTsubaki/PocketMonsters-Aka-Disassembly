@@ -5,6 +5,7 @@ PYTHON ?= python3
 BUILD_DIR := build
 AKA_ROM := baseroms/pocket_monsters_aka_japan.gb
 AKA_REV_A_ROM := baseroms/pocket_monsters_aka_japan_rev_a.gb
+BANK_SOURCES := src/banks.inc src/banks/bank00.asm
 
 .PHONY: all clean verify verify-inputs
 
@@ -13,10 +14,10 @@ all: $(BUILD_DIR)/pocket_monsters_aka_japan.gb $(BUILD_DIR)/pocket_monsters_aka_
 $(BUILD_DIR):
 	mkdir -p $@
 
-$(BUILD_DIR)/aka.o: src/aka.asm src/banks.inc $(AKA_ROM) | $(BUILD_DIR)
+$(BUILD_DIR)/aka.o: src/aka.asm $(BANK_SOURCES) $(AKA_ROM) | $(BUILD_DIR)
 	$(RGBASM) -o $@ $<
 
-$(BUILD_DIR)/aka_rev_a.o: src/aka_rev_a.asm src/banks.inc $(AKA_REV_A_ROM) | $(BUILD_DIR)
+$(BUILD_DIR)/aka_rev_a.o: src/aka_rev_a.asm $(BANK_SOURCES) $(AKA_REV_A_ROM) | $(BUILD_DIR)
 	$(RGBASM) -o $@ $<
 
 $(BUILD_DIR)/pocket_monsters_aka_japan.gb: $(BUILD_DIR)/aka.o
