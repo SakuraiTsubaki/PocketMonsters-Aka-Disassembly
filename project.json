@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/SakuraiTsubaki/Disassembly/main/schemas/project.schema.json",
+  "schema_version": 1,
+  "id": "aka",
+  "repository": "SakuraiTsubaki/PocketMonsters-Aka-Disassembly",
+  "title": "Pocket Monsters Aka / Pokémon Red",
+  "platform": "Game Boy",
+  "cpu": "Sharp SM83",
+  "architecture": "gb-sm83",
+  "family": "generation-i",
+  "status": "foundation",
+  "releases": []
+}

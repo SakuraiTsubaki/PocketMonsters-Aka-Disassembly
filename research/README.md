@@ -1,12 +1,13 @@
 # Research
 
-Research for **Pocket Monsters Aka / Pokémon Red** belongs here.
+Research here is specific to **Pocket Monsters Aka / Pokémon Red**. The release matrix starts empty on
+purpose: no hash is accepted without independent verification.
 
-Initial priorities:
+Priorities:
 
-- establish the release and revision hash matrix;
-- map ROM banks, entry points, and code/data boundaries;
-- document text, graphics, map, script, and audio formats.
+- [ ] verify the Japanese and localized release matrix
+- [ ] map ROM banks and entry points
+- [ ] classify text, graphics, maps, scripts, and audio
 
-Each note records sources, verified input hashes, procedure, evidence,
-confidence, and unresolved questions. Copyrighted binary inputs stay local.
+Use `templates/note.md` and follow the shared method in
+`SakuraiTsubaki/Disassembly`.
