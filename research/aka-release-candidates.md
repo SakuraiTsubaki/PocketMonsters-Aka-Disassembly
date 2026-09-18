@@ -40,13 +40,13 @@ python tools/hash_input.py path/to/legally-obtained-input
 
 | Release ID | Size | Revision | Header checksum | Global checksum |
 | --- | ---: | ---: | --- | --- |
-| aka-jp-rev0 | 524288 | 0 | 0x32 | 0x00c1 |
-| aka-jp-rev1 | 524288 | 1 | 0x31 | 0x0066 |
-| red-en-rev0 | 1048576 | 0 | 0x20 | 0x00e6 |
-| red-de-rev0 | 1048576 | 0 | 0x18 | 0x00dc |
-| red-es-rev0 | 1048576 | 0 | 0x18 | 0x004a |
-| red-fr-rev0 | 1048576 | 0 | 0x18 | 0x00fc |
-| red-it-rev0 | 1048576 | 0 | 0x18 | 0x00d2 |
+| aka-jp-rev0 | 524288 | 0 | 0x32 | 0xa2c1 |
+| aka-jp-rev1 | 524288 | 1 | 0x31 | 0xb866 |
+| red-en-rev0 | 1048576 | 0 | 0x20 | 0x91e6 |
+| red-de-rev0 | 1048576 | 0 | 0x18 | 0x5cdc |
+| red-es-rev0 | 1048576 | 0 | 0x18 | 0x384a |
+| red-fr-rev0 | 1048576 | 0 | 0x18 | 0x7afc |
+| red-it-rev0 | 1048576 | 0 | 0x18 | 0x89d2 |
 
 All seven inputs expose the ASCII title `POKEMON RED`.
 
