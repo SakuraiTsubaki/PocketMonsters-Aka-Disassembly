@@ -8,3 +8,5 @@
 Add deterministic target-specific tools here and commit their lawful non-ROM
 outputs, logs, fixtures, and validation material. Promote reusable tools to
 `SakuraiTsubaki/Disassembly` after they gain a target-neutral contract.
+
+- `inspect_gb_rom.py` — reports full-file hashes and validates the Nintendo logo, cartridge header checksum, and global checksum without retaining ROM bytes. Use `--require-valid` to make validation failures return a nonzero status.
