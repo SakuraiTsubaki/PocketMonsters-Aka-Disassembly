@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "aka-title-version-graphics",
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/extract_gb_1bpp.py",
+    "format": "game-boy-1bpp-8x8-tiles"
+  },
+  "reference": {
+    "repository": "pret/pokered",
+    "symbol": "Version_GFX",
+    "path": "gfx/title/red_version.1bpp"
+  },
+  "inputs": [
+    {
+      "language": "ja",
+      "release": "Pocket Monsters Aka (Japan) rev 0",
+      "rom_size": 524288,
+      "rom_sha256": "392ce450d708c8d127aaed7afc20001a48625bd83a5fa5325be82f5c0972ccfa",
+      "offset": 425984,
+      "length": 80,
+      "source_sha256": "9bf9798802187f4072c0f734d94068745cdb5467be2c518ef9db282de2f1b229"
+    },
+    {
+      "language": "en",
+      "release": "Pokemon Red (USA, Europe) rev 0",
+      "rom_size": 1048576,
+      "rom_sha256": "5ca7ba01642a3b27b0cc0b5349b52792795b62d3ed977e98a09390659af96b7b",
+      "offset": 426031,
+      "length": 80,
+      "source_sha256": "9bf9798802187f4072c0f734d94068745cdb5467be2c518ef9db282de2f1b229"
+    }
+  ],
+  "outputs": [
+    {"path": "analysis/aka-jp-title-version.json", "sha256": "fc4b66f5ba9b98b503a6a4a643a16ef191bbc3a50a48244b59ead7f8727afc64"},
+    {"path": "analysis/aka-en-title-version.json", "sha256": "b89c5e094d1f7a987017e72444b807cdce4f395c3d872061c604aefdcab3b1f2"},
+    {"path": "graphics/title/version-jp.png", "sha256": "fbfb3d0f987739292d49402f6068ef7444f4e75cef618421ffa8aaf2da0e310a"},
+    {"path": "graphics/title/version-en.png", "sha256": "fbfb3d0f987739292d49402f6068ef7444f4e75cef618421ffa8aaf2da0e310a"}
+  ]
+}
