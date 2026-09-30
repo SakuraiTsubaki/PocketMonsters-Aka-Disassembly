@@ -15,11 +15,12 @@ class TitleVersionGraphicsTests(unittest.TestCase):
             path = ROOT / output["path"]
             self.assertTrue(path.is_file())
             self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), output["sha256"])
-        for language in ("jp", "en"):
+        for language in ("jp", "en", "de", "fr", "es", "it"):
             report = json.loads((ROOT / "analysis" / f"aka-{language}-title-version.json").read_text())
             png = (ROOT / "graphics" / "title" / f"version-{language}.png").read_bytes()
-            self.assertEqual((report["source_length"], report["tile_count"]), (80, 10))
-            self.assertEqual(struct.unpack(">II", png[16:24]), (320, 32))
+            expected_tiles = 8 if language == "es" else 10
+            self.assertEqual((report["source_length"], report["tile_count"]), (expected_tiles * 8, expected_tiles))
+            self.assertEqual(struct.unpack(">II", png[16:24]), (expected_tiles * 32, 32))
             self.assertNotIn("source_bytes", report)
             self.assertEqual(hashlib.sha256(png).hexdigest(), report["png_sha256"])
 

@@ -7,7 +7,7 @@
     "format": "game-boy-1bpp-8x8-tiles"
   },
   "reference": {
-    "repository": "pret/pokered",
+    "repositories": ["pret/pokered", "einstein95/pokered-de", "einstein95/pokered-fr", "einstein95/pokered-es"],
     "symbol": "Version_GFX",
     "path": "gfx/title/red_version.1bpp"
   },
@@ -29,12 +29,40 @@
       "offset": 426031,
       "length": 80,
       "source_sha256": "9bf9798802187f4072c0f734d94068745cdb5467be2c518ef9db282de2f1b229"
+    },
+    {
+      "language": "de", "release": "Pokemon Rote Edition (Germany) rev 0", "rom_size": 1048576,
+      "rom_sha256": "9cd186b288dbcd52413d561ae449f1f700c32b45af56dbf849095d4a0c8637a6", "offset": 426031, "length": 80,
+      "source_sha256": "49c816ca73ebdc5667d180f72c466cbfa96377bb31ebf323588fbcc239119956"
+    },
+    {
+      "language": "fr", "release": "Pokemon Version Rouge (France) rev 0", "rom_size": 1048576,
+      "rom_sha256": "23766290f3b2347f815f1e8977c3b84047ed880cadda8c4f1a3595a633daa303", "offset": 426031, "length": 80,
+      "source_sha256": "0613aa501beef8e89cea3659986e7a2b2151084add7dae29f877b6ab5ae40155"
+    },
+    {
+      "language": "es", "release": "Pokemon Edicion Roja (Spain) rev 0", "rom_size": 1048576,
+      "rom_sha256": "a756cf7ad888aa46de4b9699a177a0edf1775e59eb6330014c6f5c139be9c45d", "offset": 426031, "length": 64,
+      "source_sha256": "f9b678807128d8b7daca9e437978c67233d1de32c97e366fba591d9af160c9aa"
+    },
+    {
+      "language": "it", "release": "Pokemon Versione Rossa (Italy) rev 0", "rom_size": 1048576,
+      "rom_sha256": "e805d00b0002156d38b96efd57c823b0db3a3ef4cd32f98bd9bb4779bda3dd5b", "offset": 426031, "length": 80,
+      "source_sha256": "54315af2f2feb58a081054b568ad710159dd1c4d5e8d0af487ddb01ab06a7b8a"
     }
   ],
   "outputs": [
     {"path": "analysis/aka-jp-title-version.json", "sha256": "fc4b66f5ba9b98b503a6a4a643a16ef191bbc3a50a48244b59ead7f8727afc64"},
     {"path": "analysis/aka-en-title-version.json", "sha256": "b89c5e094d1f7a987017e72444b807cdce4f395c3d872061c604aefdcab3b1f2"},
     {"path": "graphics/title/version-jp.png", "sha256": "fbfb3d0f987739292d49402f6068ef7444f4e75cef618421ffa8aaf2da0e310a"},
-    {"path": "graphics/title/version-en.png", "sha256": "fbfb3d0f987739292d49402f6068ef7444f4e75cef618421ffa8aaf2da0e310a"}
+    {"path": "graphics/title/version-en.png", "sha256": "fbfb3d0f987739292d49402f6068ef7444f4e75cef618421ffa8aaf2da0e310a"},
+    {"path": "analysis/aka-de-title-version.json", "sha256": "7f417f30442776d3fb99780c3921e376ec0ef5f284862e58fc1249adf4c7688b"},
+    {"path": "analysis/aka-fr-title-version.json", "sha256": "99ac1e2497d4329760ceeb76e2c91369d3fc27a80d65b1ae01426a17c4356f3a"},
+    {"path": "analysis/aka-es-title-version.json", "sha256": "60414546bf6f07187454c5a7060637986e5df2095057d9cdb171a64e2a0ef779"},
+    {"path": "analysis/aka-it-title-version.json", "sha256": "367561a6473a76eac5730147bd8c16e18b49951b2cfc7d5308840154f0420fa3"},
+    {"path": "graphics/title/version-de.png", "sha256": "cf6b3feef2beb81d22502517dea255de41c9a244552ca6494e906c9bbfcadfef"},
+    {"path": "graphics/title/version-fr.png", "sha256": "383a2b485781d27d29f6991ff04012327a782f46e250450cbd0a25ce9c64093b"},
+    {"path": "graphics/title/version-es.png", "sha256": "9c28047b5b5588fa9924f316ddac4839e75f9ffbd1868e7e7060d658bf06e556"},
+    {"path": "graphics/title/version-it.png", "sha256": "fbcea4b4d32e5d743f99b963646b6b65a2b036ebfcc28665b276e430274469fb"}
   ]
 }
