@@ -1,0 +1,2 @@
+{"schema_version":1,"target":{"release":"Aka-JP-rev0-candidate","sha256":"392ce450d708c8d127aaed7afc20001a48625bd83a5fa5325be82f5c0972ccfa"},"block":{"start":"0x09DA","end_exclusive":"0x0A0E","bytes_sha256":"66e343b5a2deb82d6939bebf458193c5e16466358d318ee0939c7248a99841be"},"outputs":[{"path":"src/startup_main_block.asm","sha256":"f6b71c955989a02dab328b9930885d7a2f969c5c365c93b1d41f059020cc6818"},{"path":"analysis/aka-jp-startup-main-block.json","sha256":"45ba6afa3ad9833841e2a500610d7b2f2c8fd847479a1f25282745a7b3d86ad2"}],"raw_rom_bytes_included":false}
+
