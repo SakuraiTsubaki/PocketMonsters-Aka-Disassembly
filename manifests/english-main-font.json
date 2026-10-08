@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-08",
+  "asset": "english-main-font",
+  "source_offset": 72320,
+  "source_length": 1024,
+  "reference": {
+    "repository": "pret/pokered",
+    "source_commit": "af519899719f0754965776faac0e836a3b906e6d",
+    "symbols_commit": "9a0c03834a435e38564445053ae9f9ece9999909",
+    "paths": ["gfx/font.asm", "home/load_font.asm", "gfx/font/font.png", "pokered.sym"],
+    "unique_rom_match": true
+  },
+  "generator": {"repository": "SakuraiTsubaki/Disassembly", "commit": "ed86c88d1a6ba5ea05663334732e9d354a8bb1dd", "tool": "tools/extract_gb_1bpp.py", "arguments": ["--offset", "0x11a80", "--tile-count", "128", "--tiles-per-row", "16"]},
+  "release": {"id": "red-en-rev0", "sha1": "ea9bcae617fdf159b045185467ae58b2e4a48b9a", "sha256": "5ca7ba01642a3b27b0cc0b5349b52792795b62d3ed977e98a09390659af96b7b", "range_sha256": "7da47648890723845fd71777e0ef6616c38f145a02a2aa58ca71d3460381d898"},
+  "outputs": [
+    {"path": "analysis/aka-en-main-font.json", "sha256": "1b7084c0770a5eee7cd55080013227b56fb9c9d580afcc87e4cb5a074fe41eb7"},
+    {"path": "graphics/font/main-font-en.png", "sha256": "ba6731b4173bc0697f213fe5c2d6a795fccd0c729b9fdd26d92c9b207c2bfa46"},
+    {"path": "research/english-main-font.md", "sha256": "3b3e4e32e888f47bb084ffb7107875a2054ccb1435acb287d090e050569e2cdf"}
+  ],
+  "raw_rom_bytes_included": false
+}
