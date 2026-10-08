@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-08",
+  "asset": "japanese-main-font",
+  "format": "game-boy-1bpp-8x8-tiles",
+  "tile_count": 128,
+  "source_offset": 68377,
+  "source_length": 1024,
+  "reference": {
+    "repository": "Narishma-gb/pokegreen",
+    "source_commit": "953f41b34108621b2bf13c3b1e53abfc9c3e5aec",
+    "symbols_commit": "bcb11e981bfc46428b388a42be249bcf547b1c93",
+    "paths": ["gfx/font.asm", "home/load_font.asm", "gfx/font/font.png", "pokered.sym", "pokered11.sym"]
+  },
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "commit": "ed86c88d1a6ba5ea05663334732e9d354a8bb1dd",
+    "tool": "tools/extract_gb_1bpp.py",
+    "arguments": ["--offset", "0x10b19", "--tile-count", "128", "--tiles-per-row", "16"]
+  },
+  "releases": [
+    {"id": "aka-jp-rev0", "sha1": "0623ad12f48c259447980d68bd85ddbf8204b2cd", "sha256": "392ce450d708c8d127aaed7afc20001a48625bd83a5fa5325be82f5c0972ccfa", "range_sha256": "11bfba65ad8f3b4a93f3c9b400afb611fb4072b26e2c40c77aab67bd08c9bf15"},
+    {"id": "aka-jp-rev1", "sha1": "ef74c79cded14204ac79e77f4964d9cb25003120", "sha256": "751abb1fb2b2d6b91dc631fa10ed36bd07f682cb5c3febe6c8f0e3dabc1fae1c", "range_sha256": "11bfba65ad8f3b4a93f3c9b400afb611fb4072b26e2c40c77aab67bd08c9bf15"}
+  ],
+  "outputs": [
+    {"path": "analysis/aka-jp-main-font.json", "sha256": "1be24ba682a73904c0ad5b62ad77a1a8a56218d5890611bb581f31a2d595c56a"},
+    {"path": "graphics/font/main-font-jp.png", "sha256": "7264ef108040d7905db2d27476c6e3f47cd30f58b64767f10fc8290a355888cf"},
+    {"path": "research/japanese-main-font.md", "sha256": "19c4651df9f95ea29be4fbe1a473006723a2f3ecba9d6ad2b6d49ab217ec501b"}
+  ],
+  "raw_rom_bytes_included": false
+}
