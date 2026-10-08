@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-08",
+  "asset": "european-main-fonts",
+  "source_offset": 72320,
+  "source_length": 1024,
+  "tools": {"repository": "SakuraiTsubaki/Disassembly", "commit": "1f9c7696f5071a5c546085afe50e1a23f49f645e", "locator": "tools/locate_gb_1bpp_loader.py", "extractor": "tools/extract_gb_1bpp.py"},
+  "releases": {
+    "de": {"id": "red-de-rev0", "sha1": "87d523fe1a0c548db7c5477b451ddec1eb083c06", "sha256": "9cd186b288dbcd52413d561ae449f1f700c32b45af56dbf849095d4a0c8637a6", "loader_offset": 13978, "range_sha256": "d05ea7a9245f217f2354a7067751b5e4b415adc9975edf256b83a352236754ab"},
+    "fr": {"id": "red-fr-rev0", "sha1": "47a7622fa30e6402a3891fe65b3a930bf9bd7aec", "sha256": "23766290f3b2347f815f1e8977c3b84047ed880cadda8c4f1a3595a633daa303", "loader_offset": 13981, "range_sha256": "d05ea7a9245f217f2354a7067751b5e4b415adc9975edf256b83a352236754ab"},
+    "es": {"id": "red-es-rev0", "sha1": "fc17c5b904d551b1b908054ccd1c493f755f832a", "sha256": "a756cf7ad888aa46de4b9699a177a0edf1775e59eb6330014c6f5c139be9c45d", "loader_offset": 13983, "range_sha256": "8b8fa58ed6e3e649cb9d253a1aa2732737141ec30ece6761d4260b5e4d64e575"},
+    "it": {"id": "red-it-rev0", "sha1": "65b97cf8f2f1cff711a6d08c6c894c8ce65ce522", "sha256": "e805d00b0002156d38b96efd57c823b0db3a3ef4cd32f98bd9bb4779bda3dd5b", "loader_offset": 13976, "range_sha256": "8b8fa58ed6e3e649cb9d253a1aa2732737141ec30ece6761d4260b5e4d64e575"}
+  },
+  "outputs": [
+    {"path": "analysis/aka-de-main-font.json", "sha256": "cf3b8e18fb15375b7b98802abec2293044cdfb24fe747128e76d028b8b32c586"},
+    {"path": "analysis/aka-fr-main-font.json", "sha256": "e74b8f03319d57eaadaaa85a4901c1a254a149d208e9dadcee20d860dbe8febe"},
+    {"path": "analysis/aka-es-main-font.json", "sha256": "041958c0a68c7b40c632ee96106edb02f6019c3348c0358ecfe78fe7d3989bf3"},
+    {"path": "analysis/aka-it-main-font.json", "sha256": "52d51a57a60bfed31b6117fffe60ad2e614acf84b0547478867d67757f1065f3"},
+    {"path": "graphics/font/main-font-de.png", "sha256": "cd47988ce551047aa51de6996d324adf9d68109a7f2aa54c0e222e5300420269"},
+    {"path": "graphics/font/main-font-fr.png", "sha256": "cd47988ce551047aa51de6996d324adf9d68109a7f2aa54c0e222e5300420269"},
+    {"path": "graphics/font/main-font-es.png", "sha256": "2f4da34f88a5d1690e76dd6a2c1421f6305d8bb3310633e1cd9a0a270028a9bd"},
+    {"path": "graphics/font/main-font-it.png", "sha256": "2f4da34f88a5d1690e76dd6a2c1421f6305d8bb3310633e1cd9a0a270028a9bd"},
+    {"path": "research/european-main-fonts.md", "sha256": "c99bb568e881887a115c98e369f95b2ed86eb167f2eadc047de6c8eacac7034f"}
+  ],
+  "raw_rom_bytes_included": false
+}
