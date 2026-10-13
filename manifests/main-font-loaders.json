@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "asset_group": "aka-red-main-font-loaders",
+  "generator": {"repository":"SakuraiTsubaki/Disassembly","tool":"tools/locate_gb_1bpp_loader.py","source_length":1024},
+  "releases": [
+    {"id":"aka-jp-rev0","rom_sha256":"392ce450d708c8d127aaed7afc20001a48625bd83a5fa5325be82f5c0972ccfa","loader_offset":14026,"loader_report":"analysis/aka-jp-rev0-main-font-loader.json","font_report":"analysis/aka-jp-main-font.json"},
+    {"id":"aka-jp-rev1","rom_sha256":"751abb1fb2b2d6b91dc631fa10ed36bd07f682cb5c3febe6c8f0e3dabc1fae1c","loader_offset":14008,"loader_report":"analysis/aka-jp-rev1-main-font-loader.json","font_report":"analysis/aka-jp-main-font.json"},
+    {"id":"red-en-rev0","rom_sha256":"5ca7ba01642a3b27b0cc0b5349b52792795b62d3ed977e98a09390659af96b7b","loader_offset":13952,"loader_report":"analysis/red-en-rev0-main-font-loader.json","font_report":"analysis/aka-en-main-font.json"},
+    {"id":"red-de-rev0","rom_sha256":"9cd186b288dbcd52413d561ae449f1f700c32b45af56dbf849095d4a0c8637a6","loader_offset":13978,"loader_report":"analysis/red-de-rev0-main-font-loader.json","font_report":"analysis/aka-de-main-font.json"},
+    {"id":"red-es-rev0","rom_sha256":"a756cf7ad888aa46de4b9699a177a0edf1775e59eb6330014c6f5c139be9c45d","loader_offset":13983,"loader_report":"analysis/red-es-rev0-main-font-loader.json","font_report":"analysis/aka-es-main-font.json"},
+    {"id":"red-fr-rev0","rom_sha256":"23766290f3b2347f815f1e8977c3b84047ed880cadda8c4f1a3595a633daa303","loader_offset":13981,"loader_report":"analysis/red-fr-rev0-main-font-loader.json","font_report":"analysis/aka-fr-main-font.json"},
+    {"id":"red-it-rev0","rom_sha256":"e805d00b0002156d38b96efd57c823b0db3a3ef4cd32f98bd9bb4779bda3dd5b","loader_offset":13976,"loader_report":"analysis/red-it-rev0-main-font-loader.json","font_report":"analysis/aka-it-main-font.json"}
+  ],
+  "outputs": [
+    {"path":"analysis/aka-jp-rev0-main-font-loader.json","sha256":"af290b076b72534237a2212fc3e2910ff842a417603feade39476c00c3485689"},
+    {"path":"analysis/aka-jp-rev1-main-font-loader.json","sha256":"bd26e32453aa38e018d8bb6f82de0d94d74ee69b6a379748cd1fb72a253d3b0b"},
+    {"path":"analysis/red-en-rev0-main-font-loader.json","sha256":"dd7dabcaffc0c63a70163158d1e4d33bd5be7a8080fdd8794b69ae79ad385849"},
+    {"path":"analysis/red-de-rev0-main-font-loader.json","sha256":"4c08e15b8029615ecd4443f25ae5036fea1457d2793f7ba5a815f4de8ed57abf"},
+    {"path":"analysis/red-es-rev0-main-font-loader.json","sha256":"7d7b5042d6ac2d56970e471ce0d01c199c87b3b6f9848848ca49d1d90b6f1af2"},
+    {"path":"analysis/red-fr-rev0-main-font-loader.json","sha256":"aacb2aaa38f241a58e15cf9cdd52b25e9dea6a7a0a2bca599b2558dd7aa16e33"},
+    {"path":"analysis/red-it-rev0-main-font-loader.json","sha256":"45831b48007050865742715d0c5fcc1c294e5d85e335fb1968ce7e04dc5d652e"},
+    {"path":"research/main-font-loaders.md","sha256":"662ad267caaf1b547dac397e215b4ca16962669adec89159b9852a168240489e"}
+  ],
+  "raw_rom_bytes_included": false
+}
+
