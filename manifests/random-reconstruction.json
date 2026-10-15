@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "function": "Random_",
+  "releases": [
+    "aka-jp-rev0",
+    "aka-jp-rev1",
+    "red-de-rev0",
+    "red-en-rev0",
+    "red-es-rev0",
+    "red-fr-rev0",
+    "red-it-rev0"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/locate_gen1_random.py",
+    "tool_sha256": "0c80e8a908ca3e7695520b46d739cdf9ce8c0004dd44c183d62261c7cbedfbd1"
+  },
+  "outputs": [
+    {
+      "path": "src/random.asm",
+      "sha256": "ddc5b138f0466e3e13a6866db41f0d4e08d593d9aca56038aeb0ba472f99bea1"
+    },
+    {
+      "path": "analysis/aka-jp-rev0-random.json",
+      "sha256": "1b1a9d998f90e051f654a21b955b3281bf95a6ad1926350841ae3a769b8729ab"
+    },
+    {
+      "path": "analysis/aka-jp-rev1-random.json",
+      "sha256": "91ccdc761bdb971b943c2657e576a2a06ff02fa8f2b13cce2acbb1c9544c7306"
+    },
+    {
+      "path": "analysis/red-de-rev0-random.json",
+      "sha256": "217163f74bf5be6e994182c1d68879c40e3b694335d774e5e8f0902a286dfc82"
+    },
+    {
+      "path": "analysis/red-en-rev0-random.json",
+      "sha256": "7bd5fa38c7d783f395249e5694e6ed6c1d6fb4c0aa154a83949f7b7d40750222"
+    },
+    {
+      "path": "analysis/red-es-rev0-random.json",
+      "sha256": "b3ba356a0e40f3876a5e798c6c4340c0df01dd10de7b7aaff9eac3c67b4419e8"
+    },
+    {
+      "path": "analysis/red-fr-rev0-random.json",
+      "sha256": "a5b182c63d3aeefdf9aed975775f3e0a02338fbfba1bfe9405e10f030c8a7c1b"
+    },
+    {
+      "path": "analysis/red-it-rev0-random.json",
+      "sha256": "b2fc8df6291dad25371ff13d0eb60f0da847d06909067723771de1662f8a9379"
+    },
+    {
+      "path": "research/random-reconstruction.md",
+      "sha256": "48d2028861293b25cc945ba724846f511db9f784686bcfb9e01f0d2703f40694"
+    },
+    {
+      "path": "tests/test_random_reconstruction.py",
+      "sha256": "a6448d063bfd263df01804c55731955add6e00e1d489a3efcf0a63b3a29314bf"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
