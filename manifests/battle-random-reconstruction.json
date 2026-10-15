@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "function": "BattleRandom",
+  "releases": [
+    "aka-jp-rev0",
+    "aka-jp-rev1",
+    "red-de-rev0",
+    "red-en-rev0",
+    "red-es-rev0",
+    "red-fr-rev0",
+    "red-it-rev0"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/locate_gen1_battle_random.py",
+    "tool_sha256": "02c98200055999301ffea8b76ecac74cccae87da4f159c9b9d4b64afd2fb8dad"
+  },
+  "outputs": [
+    {
+      "path": "src/battle_random.asm",
+      "sha256": "9f5a1aa6aec5bd835bf2bdcad0714a9abc8e8d4bdfefb7d7b600d3a7bcc8be17"
+    },
+    {
+      "path": "analysis/aka-jp-rev0-battle-random.json",
+      "sha256": "46afc0b0e7ea8cbec2a846a0b0265626cc8fa6d1b391b684c1d2b2508d789a61"
+    },
+    {
+      "path": "analysis/aka-jp-rev1-battle-random.json",
+      "sha256": "f0f157c288c36cf26e7db97db932b22af6506dd88d59df75ec30363f3567a5c7"
+    },
+    {
+      "path": "analysis/red-de-rev0-battle-random.json",
+      "sha256": "b002a3f45070a92921581bc90f688f90cc87056cbdf492306ef5bf4fa77c4643"
+    },
+    {
+      "path": "analysis/red-en-rev0-battle-random.json",
+      "sha256": "d9cd52513d8d7c4537bbfce47a2272e46cb68e33d9a09e44daead0418f0e1f3c"
+    },
+    {
+      "path": "analysis/red-es-rev0-battle-random.json",
+      "sha256": "f98e6b7da598125de3954e7fcc829401ff070d022cba77d1ba3246a751c8d0ff"
+    },
+    {
+      "path": "analysis/red-fr-rev0-battle-random.json",
+      "sha256": "df73dee2b415404cace26c796318961e8358338030a80bb961e6fa6ceb0af5cc"
+    },
+    {
+      "path": "analysis/red-it-rev0-battle-random.json",
+      "sha256": "4ae17b037c930ea96613dcebb4679c39a095b0fc0e7436c922b07b0dba57a2d2"
+    },
+    {
+      "path": "research/battle-random-reconstruction.md",
+      "sha256": "a08add2acecd5baa9da58128f696d4300cb59a391419d96b6e8689c2040127f7"
+    },
+    {
+      "path": "tests/test_battle_random_reconstruction.py",
+      "sha256": "fa4c72b4b7bfb934d55a365af05052fd6166bee47cbf28ad1629269efadf693d"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
