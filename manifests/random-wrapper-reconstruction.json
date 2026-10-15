@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "function": "Random",
+  "releases": [
+    "aka-jp-rev0",
+    "aka-jp-rev1",
+    "red-de-rev0",
+    "red-en-rev0",
+    "red-es-rev0",
+    "red-fr-rev0",
+    "red-it-rev0"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/locate_gen1_random_wrapper.py",
+    "tool_sha256": "a1c957a42389f463b3dba23642bc530eb21ab3d45066a9d2ff5f92e7a726621a"
+  },
+  "outputs": [
+    {
+      "path": "src/random_wrapper.asm",
+      "sha256": "619d4d9dc3d4605021e6253d5f565ae6de05b1490b3e8f5cda5bafc55e80d249"
+    },
+    {
+      "path": "analysis/aka-jp-rev0-random-wrapper.json",
+      "sha256": "0226d84b982498621ef6e516fdfe496fa51f2b9a63f56fb883dc755f88c6952e"
+    },
+    {
+      "path": "analysis/aka-jp-rev1-random-wrapper.json",
+      "sha256": "77b5cc7ff23b3057ff37102246dcb83f4cd9b847e9cb4199ce3cce265104cf09"
+    },
+    {
+      "path": "analysis/red-de-rev0-random-wrapper.json",
+      "sha256": "537288356923d12692a36e9fde8b04c16b301853396beeeb398b518428ecbe91"
+    },
+    {
+      "path": "analysis/red-en-rev0-random-wrapper.json",
+      "sha256": "16a4790a88c19f7cf7f26468fbbec798ff53cce1e1169fdee7e8c4b055b53277"
+    },
+    {
+      "path": "analysis/red-es-rev0-random-wrapper.json",
+      "sha256": "595adbd85cb232c4ddce5ede7f7df26644f272f4ec4a295c8ff79042126de908"
+    },
+    {
+      "path": "analysis/red-fr-rev0-random-wrapper.json",
+      "sha256": "75d7815f4060ea7ac7d391e202234a3d095527f6ce8b41b43a7effe30ff7ef3b"
+    },
+    {
+      "path": "analysis/red-it-rev0-random-wrapper.json",
+      "sha256": "f5178e0ad8ad7e5b78455717dd615b681b1f8cf1d144c58362a95a4a7acfe22e"
+    },
+    {
+      "path": "research/random-wrapper-reconstruction.md",
+      "sha256": "f34861677fb5522eede94329f573148daf618aa129daf64f8862f117521416f7"
+    },
+    {
+      "path": "tests/test_random_wrapper_reconstruction.py",
+      "sha256": "61a75c290779983d8f4b97410462faa2f782bfface645aee4e849ce4baad6a31"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
