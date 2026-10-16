@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "function": "Divide",
+  "releases": [
+    "aka-jp-rev0",
+    "aka-jp-rev1",
+    "red-de-rev0",
+    "red-en-rev0",
+    "red-es-rev0",
+    "red-fr-rev0",
+    "red-it-rev0"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/inspect_gen1_divide_wrapper.py",
+    "tool_sha256": "ce52ca1aaf1e2c93cc2f97603b77d7cc584d38f7ab02762561a538f08770c971"
+  },
+  "outputs": [
+    {
+      "path": "src/divide_wrapper.asm",
+      "sha256": "6a425979a3740c6f8f0fbc6bd9a06a1947cd4a05ac2f55cd4522d9bafa24ca72"
+    },
+    {
+      "path": "analysis/aka-jp-rev0-divide-wrapper.json",
+      "sha256": "301994a89694141cabbc33efd09a569be0056bccba00fc92040a006918a705bf"
+    },
+    {
+      "path": "analysis/aka-jp-rev1-divide-wrapper.json",
+      "sha256": "8ddc542afb88e386d7c2e9b7682d488093529cb71218c6980c5218697d891784"
+    },
+    {
+      "path": "analysis/red-de-rev0-divide-wrapper.json",
+      "sha256": "fcf88785cc7180c58cd5e560f8e6bbc02c3676a6f542010779d24e926a3541db"
+    },
+    {
+      "path": "analysis/red-en-rev0-divide-wrapper.json",
+      "sha256": "7969ac7b5d3570db0e3e99380e6a6dd8834771ea229b844126b824cffd88fd05"
+    },
+    {
+      "path": "analysis/red-es-rev0-divide-wrapper.json",
+      "sha256": "7c339e19c96bfcb3de92cda51d016e17bdeebb4e92c8632f0c3fb0035ee2e5ec"
+    },
+    {
+      "path": "analysis/red-fr-rev0-divide-wrapper.json",
+      "sha256": "7400f93333604f64a904014f11d72984319823b71767c88a047a13ba846a508d"
+    },
+    {
+      "path": "analysis/red-it-rev0-divide-wrapper.json",
+      "sha256": "690bafb835a8ce6d37f8dc17661fb04b5b5a7dc422560482ccaaabaf76df614c"
+    },
+    {
+      "path": "research/divide-wrapper-reconstruction.md",
+      "sha256": "3299b99e0554936f187a0b08089a455d0c929d5fed9fa281412c3f1cb5eecdd8"
+    },
+    {
+      "path": "tests/test_divide_wrapper_reconstruction.py",
+      "sha256": "bc5c17b0697d3e14040890bab7170cae3a8792e308ddd0b203d1c4d725efbacf"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
