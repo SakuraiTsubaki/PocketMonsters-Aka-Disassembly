@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "red-de-rev0",
+    "sha256": "9cd186b288dbcd52413d561ae449f1f700c32b45af56dbf849095d4a0c8637a6"
+  },
+  "function": {
+    "name": "Multiply",
+    "rom_offset": 14534,
+    "bank": 0,
+    "address": 14534,
+    "range_end_exclusive": 14547,
+    "length": 13,
+    "code_sha256": "6e512dfed0ccd8c190621bd9ea1a6624d66b3d6eb94c3a6b87bda259a254cacb",
+    "far_call": {
+      "target": {
+        "bank": 13,
+        "address": 32065,
+        "rom_offset": 228673
+      },
+      "bankswitch": {
+        "bank": 0,
+        "address": 13808
+      }
+    },
+    "preserved_registers": [
+      "BC",
+      "HL"
+    ]
+  },
+  "semantics": {
+    "operation": "preserve HL/BC and far-call _Multiply",
+    "input": "three-byte hMultiplicand and hMultiplier",
+    "output": "four-byte hProduct",
+    "register_preservation": "BC and HL are restored"
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "af519899719f0754965776faac0e836a3b906e6d",
+    "path": "home/math.asm",
+    "macro_path": "macros/farcall.asm",
+    "raw_rom_bytes_published": false
+  },
+  "raw_rom_bytes_included": false
+}
