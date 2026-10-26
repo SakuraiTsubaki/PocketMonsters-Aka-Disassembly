@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "red-de-rev0",
+    "sha256": "9cd186b288dbcd52413d561ae449f1f700c32b45af56dbf849095d4a0c8637a6"
+  },
+  "function": {
+    "name": "CopyData",
+    "rom_offset": 181,
+    "bank": 0,
+    "address": 181,
+    "range_end_exclusive": 190,
+    "length": 9,
+    "code_sha256": "4c81b1d98cede80c642119edcb1c3f45c1f05e97c1d9aafcf250b065f33d495c"
+  },
+  "semantics": {
+    "source": "HL",
+    "destination": "DE",
+    "length": "BC",
+    "operation": "copy one byte, increment HL and DE, decrement BC, repeat until BC is zero",
+    "zero_length_precondition": "BC must be nonzero; zero would wrap and copy 65536 bytes",
+    "return_registers": "HL and DE point one byte past their ranges; BC is zero"
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "af519899719f0754965776faac0e836a3b906e6d",
+    "path": "home/copy.asm",
+    "raw_rom_bytes_published": false
+  },
+  "raw_rom_bytes_included": false
+}
