@@ -1,0 +1,571 @@
+{
+  "schema_version": 1,
+  "game": "Pokemon Red",
+  "root": "graphics",
+  "asset_count": 21,
+  "png_count": 20,
+  "metadata_count": 1,
+  "official_language_priority": [
+    "Japanese",
+    "Korean",
+    "English",
+    "German",
+    "French",
+    "Italian",
+    "Spanish"
+  ],
+  "assets": [
+    {
+      "path": "graphics/font/main-font-jp.png",
+      "sha256": "7264ef108040d7905db2d27476c6e3f47cd30f58b64767f10fc8290a355888cf",
+      "size": 2218,
+      "format": "PNG",
+      "category": "font",
+      "language": "Japanese",
+      "origin_reference": true,
+      "provenance": [
+        {
+          "path": "manifests/japanese-main-font.json",
+          "sha256": "b1b137931fb662fef2945ed86b10417750a74b4fa16d9464dd5938f0c0a4004d"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 256,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/main-font-en.png",
+      "sha256": "ba6731b4173bc0697f213fe5c2d6a795fccd0c729b9fdd26d92c9b207c2bfa46",
+      "size": 1690,
+      "format": "PNG",
+      "category": "font",
+      "language": "English",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/english-main-font.json",
+          "sha256": "20e4e3787b7525aef279cd60f1353d7574a005777ea1d398e6fc0bf37363c627"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 256,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/main-font-de.png",
+      "sha256": "cd47988ce551047aa51de6996d324adf9d68109a7f2aa54c0e222e5300420269",
+      "size": 1943,
+      "format": "PNG",
+      "category": "font",
+      "language": "German",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/european-main-fonts.json",
+          "sha256": "8e92db040359e33728c446db445212843c303dd6947e08e2632c5a85ec03f4eb"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 256,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/main-font-fr.png",
+      "sha256": "cd47988ce551047aa51de6996d324adf9d68109a7f2aa54c0e222e5300420269",
+      "size": 1943,
+      "format": "PNG",
+      "category": "font",
+      "language": "French",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/european-main-fonts.json",
+          "sha256": "8e92db040359e33728c446db445212843c303dd6947e08e2632c5a85ec03f4eb"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 256,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/main-font-it.png",
+      "sha256": "2f4da34f88a5d1690e76dd6a2c1421f6305d8bb3310633e1cd9a0a270028a9bd",
+      "size": 1992,
+      "format": "PNG",
+      "category": "font",
+      "language": "Italian",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/european-main-fonts.json",
+          "sha256": "8e92db040359e33728c446db445212843c303dd6947e08e2632c5a85ec03f4eb"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 256,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/font/main-font-es.png",
+      "sha256": "2f4da34f88a5d1690e76dd6a2c1421f6305d8bb3310633e1cd9a0a270028a9bd",
+      "size": 1992,
+      "format": "PNG",
+      "category": "font",
+      "language": "Spanish",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/european-main-fonts.json",
+          "sha256": "8e92db040359e33728c446db445212843c303dd6947e08e2632c5a85ec03f4eb"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 256,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo-en.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "English",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/english-entry-header.json",
+          "sha256": "decbe84be2ea58542a229f869ba635a26be3adbadcca5aaac1bed1da02dfda15"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo-de.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "German",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/global-entry-header.json",
+          "sha256": "50e1449784deacde1a33bfac338dc9b1656bf66efd718b38ece0a27773441030"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo-fr.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "French",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/global-entry-header.json",
+          "sha256": "50e1449784deacde1a33bfac338dc9b1656bf66efd718b38ece0a27773441030"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo-it.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "Italian",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/global-entry-header.json",
+          "sha256": "50e1449784deacde1a33bfac338dc9b1656bf66efd718b38ece0a27773441030"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo-es.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "Spanish",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/global-entry-header.json",
+          "sha256": "50e1449784deacde1a33bfac338dc9b1656bf66efd718b38ece0a27773441030"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/header-logo.json",
+          "sha256": "87d97263120a93f12bdac9eaa3a5163ea0f34c1bea9c693ab9af99bda5744ae8"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/pokemon/party-icons-atlas.json",
+      "sha256": "7b49d88045ab5977c074c8b8a3c196fbc695bb2a6d83b87fc8413867fcb87947",
+      "size": 4913,
+      "format": "JSON",
+      "category": "pokemon",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/party-icons.json",
+          "sha256": "f4467efea720e4b55e7f68a5bb89610e6e30f8c9a39e2e7b2bd458c39909a44e"
+        },
+        {
+          "path": "analysis/aka-jp-rev0-party-icons.json",
+          "sha256": "9a51ca756985c123581a538cff4f4a7a295f74a14039f670271446f27159c096"
+        },
+        {
+          "path": "analysis/aka-jp-rev1-party-icons.json",
+          "sha256": "a5ba06b270e2f21bafefe6658cb771abb7c8d9044cbdb7d71f52cd24fed2c571"
+        },
+        {
+          "path": "analysis/party-icons-summary.json",
+          "sha256": "aecc1a4facfb47b37b530ea986583d750919f9aab4064d796b97dae6a767f4a2"
+        },
+        {
+          "path": "analysis/red-de-rev0-party-icons.json",
+          "sha256": "c083cff2dba56b541042a0ef26991e48439ef5dd4e2ed85474f064d79805ab4f"
+        },
+        {
+          "path": "analysis/red-en-rev0-party-icons.json",
+          "sha256": "f19a6abd021b2fa4c638f74e3932e3bbd2f31b2391c4ff5716caa145e573e860"
+        },
+        {
+          "path": "analysis/red-es-rev0-party-icons.json",
+          "sha256": "72d4f0fd02c4350fc83463cf838e78b521db65c3b6c4c89e47aefc92556f46d5"
+        },
+        {
+          "path": "analysis/red-fr-rev0-party-icons.json",
+          "sha256": "0f9b62c5ede823557c6a1272ef8fdde9faa91f0d8251bdc9f0bce55adc5d07db"
+        },
+        {
+          "path": "analysis/red-it-rev0-party-icons.json",
+          "sha256": "3d9fdba8bf70efda375ee63010e1d734780465e993e9f31098c8f7dbffd720a8"
+        }
+      ]
+    },
+    {
+      "path": "graphics/pokemon/party-icons-atlas.png",
+      "sha256": "0de928b78122de91cc72045751fc696a1355100dcee0ad1c6f79c40c48449801",
+      "size": 788,
+      "format": "PNG",
+      "category": "pokemon",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/party-icons.json",
+          "sha256": "f4467efea720e4b55e7f68a5bb89610e6e30f8c9a39e2e7b2bd458c39909a44e"
+        },
+        {
+          "path": "analysis/aka-jp-rev0-party-icons.json",
+          "sha256": "9a51ca756985c123581a538cff4f4a7a295f74a14039f670271446f27159c096"
+        },
+        {
+          "path": "analysis/aka-jp-rev1-party-icons.json",
+          "sha256": "a5ba06b270e2f21bafefe6658cb771abb7c8d9044cbdb7d71f52cd24fed2c571"
+        },
+        {
+          "path": "analysis/party-icons-summary.json",
+          "sha256": "aecc1a4facfb47b37b530ea986583d750919f9aab4064d796b97dae6a767f4a2"
+        },
+        {
+          "path": "analysis/red-de-rev0-party-icons.json",
+          "sha256": "c083cff2dba56b541042a0ef26991e48439ef5dd4e2ed85474f064d79805ab4f"
+        },
+        {
+          "path": "analysis/red-en-rev0-party-icons.json",
+          "sha256": "f19a6abd021b2fa4c638f74e3932e3bbd2f31b2391c4ff5716caa145e573e860"
+        },
+        {
+          "path": "analysis/red-es-rev0-party-icons.json",
+          "sha256": "72d4f0fd02c4350fc83463cf838e78b521db65c3b6c4c89e47aefc92556f46d5"
+        },
+        {
+          "path": "analysis/red-fr-rev0-party-icons.json",
+          "sha256": "0f9b62c5ede823557c6a1272ef8fdde9faa91f0d8251bdc9f0bce55adc5d07db"
+        },
+        {
+          "path": "analysis/red-it-rev0-party-icons.json",
+          "sha256": "3d9fdba8bf70efda375ee63010e1d734780465e993e9f31098c8f7dbffd720a8"
+        }
+      ],
+      "png": {
+        "width": 256,
+        "height": 128,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/pokemon/party-icons-source-atlas.png",
+      "sha256": "6ffe609e236f2a45b98490fa2857c21c2ac1bc9ba6233d7cef17fdfe189d96ab",
+      "size": 553,
+      "format": "PNG",
+      "category": "pokemon",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/party-icons.json",
+          "sha256": "f4467efea720e4b55e7f68a5bb89610e6e30f8c9a39e2e7b2bd458c39909a44e"
+        },
+        {
+          "path": "analysis/aka-jp-rev0-party-icons.json",
+          "sha256": "9a51ca756985c123581a538cff4f4a7a295f74a14039f670271446f27159c096"
+        },
+        {
+          "path": "analysis/aka-jp-rev1-party-icons.json",
+          "sha256": "a5ba06b270e2f21bafefe6658cb771abb7c8d9044cbdb7d71f52cd24fed2c571"
+        },
+        {
+          "path": "analysis/party-icons-summary.json",
+          "sha256": "aecc1a4facfb47b37b530ea986583d750919f9aab4064d796b97dae6a767f4a2"
+        },
+        {
+          "path": "analysis/red-de-rev0-party-icons.json",
+          "sha256": "c083cff2dba56b541042a0ef26991e48439ef5dd4e2ed85474f064d79805ab4f"
+        },
+        {
+          "path": "analysis/red-en-rev0-party-icons.json",
+          "sha256": "f19a6abd021b2fa4c638f74e3932e3bbd2f31b2391c4ff5716caa145e573e860"
+        },
+        {
+          "path": "analysis/red-es-rev0-party-icons.json",
+          "sha256": "72d4f0fd02c4350fc83463cf838e78b521db65c3b6c4c89e47aefc92556f46d5"
+        },
+        {
+          "path": "analysis/red-fr-rev0-party-icons.json",
+          "sha256": "0f9b62c5ede823557c6a1272ef8fdde9faa91f0d8251bdc9f0bce55adc5d07db"
+        },
+        {
+          "path": "analysis/red-it-rev0-party-icons.json",
+          "sha256": "3d9fdba8bf70efda375ee63010e1d734780465e993e9f31098c8f7dbffd720a8"
+        }
+      ],
+      "png": {
+        "width": 128,
+        "height": 128,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/version-jp.png",
+      "sha256": "fbfb3d0f987739292d49402f6068ef7444f4e75cef618421ffa8aaf2da0e310a",
+      "size": 219,
+      "format": "PNG",
+      "category": "title",
+      "language": "Japanese",
+      "origin_reference": true,
+      "provenance": [
+        {
+          "path": "manifests/title-version-graphics.json",
+          "sha256": "52f923166f56d696ad34aa706c98ed7c0cd9b864a9fb8b050a823e88517d32a2"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 32,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/version-en.png",
+      "sha256": "fbfb3d0f987739292d49402f6068ef7444f4e75cef618421ffa8aaf2da0e310a",
+      "size": 219,
+      "format": "PNG",
+      "category": "title",
+      "language": "English",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/title-version-graphics.json",
+          "sha256": "52f923166f56d696ad34aa706c98ed7c0cd9b864a9fb8b050a823e88517d32a2"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 32,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/version-de.png",
+      "sha256": "cf6b3feef2beb81d22502517dea255de41c9a244552ca6494e906c9bbfcadfef",
+      "size": 201,
+      "format": "PNG",
+      "category": "title",
+      "language": "German",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/title-version-graphics.json",
+          "sha256": "52f923166f56d696ad34aa706c98ed7c0cd9b864a9fb8b050a823e88517d32a2"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 32,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/version-fr.png",
+      "sha256": "383a2b485781d27d29f6991ff04012327a782f46e250450cbd0a25ce9c64093b",
+      "size": 223,
+      "format": "PNG",
+      "category": "title",
+      "language": "French",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/title-version-graphics.json",
+          "sha256": "52f923166f56d696ad34aa706c98ed7c0cd9b864a9fb8b050a823e88517d32a2"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 32,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/version-it.png",
+      "sha256": "fbcea4b4d32e5d743f99b963646b6b65a2b036ebfcc28665b276e430274469fb",
+      "size": 226,
+      "format": "PNG",
+      "category": "title",
+      "language": "Italian",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/title-version-graphics.json",
+          "sha256": "52f923166f56d696ad34aa706c98ed7c0cd9b864a9fb8b050a823e88517d32a2"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 32,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/version-es.png",
+      "sha256": "9c28047b5b5588fa9924f316ddac4839e75f9ffbd1868e7e7060d658bf06e556",
+      "size": 206,
+      "format": "PNG",
+      "category": "title",
+      "language": "Spanish",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/title-version-graphics.json",
+          "sha256": "52f923166f56d696ad34aa706c98ed7c0cd9b864a9fb8b050a823e88517d32a2"
+        }
+      ],
+      "png": {
+        "width": 256,
+        "height": 32,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
