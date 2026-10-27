@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "game": "Aka",
+  "function": "FillMemory",
+  "profile": "classic",
+  "origin_reference": "aka-jp-rev0",
+  "release_count": 7,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_fill_memory.py",
+    "tool_sha256": "be4e6c8d4c53efe135240cb7efa749ba10f0158e68750e4d209c438f3b00bd7d"
+  },
+  "outputs": [
+    {
+      "path": "analysis/aka-release-header-report.json",
+      "sha256": "ddc094bf37b30b08714ee7f1de21d7144accccb6d4d9db153077f86efa91d5ab"
+    },
+    {
+      "path": "src/fill_memory.asm",
+      "sha256": "8c31c093fa0bae8588735652fcb198ae9460c6a280b32243b0120392f1febb0d"
+    },
+    {
+      "path": "analysis/fill-memory-summary.json",
+      "sha256": "e73ef6b3fa07e9ea4a12bd9b36a38e0a89e07c1604b90b192604f96fd28b9061"
+    },
+    {
+      "path": "analysis/aka-jp-rev0-fill-memory.json",
+      "sha256": "783f8171e83980a60ec30d9e96b24d86c2394ca88262da860023a0b0cd9c3fdf"
+    },
+    {
+      "path": "analysis/aka-jp-rev1-fill-memory.json",
+      "sha256": "d74e51064da86348fbe7e4d2c7b45f162b4cf3be9bd20d14b29e8d50a145a466"
+    },
+    {
+      "path": "analysis/red-de-rev0-fill-memory.json",
+      "sha256": "44110fb06b99c5a46a0f93710fbb0755a8111489f901ee328f07bd92a46425c8"
+    },
+    {
+      "path": "analysis/red-en-rev0-fill-memory.json",
+      "sha256": "6e19437b5c17794403cafc0e2d0b2a9d7c36368b6e7f002243d0766528f5c044"
+    },
+    {
+      "path": "analysis/red-es-rev0-fill-memory.json",
+      "sha256": "a63734b3433a22126daeb552816c8cfede8c7f59002f36672069870c9b80838d"
+    },
+    {
+      "path": "analysis/red-fr-rev0-fill-memory.json",
+      "sha256": "ddd40cee4425ae966920895091a314347e182ae95765fcf175750297393406e0"
+    },
+    {
+      "path": "analysis/red-it-rev0-fill-memory.json",
+      "sha256": "15991effa8f674a306f05bffbf1451ee986d5532b1bdb6c1ecfbc6fc5a20e9b9"
+    },
+    {
+      "path": "research/fill-memory-reconstruction.md",
+      "sha256": "1de1f4264fe6d9a26c709c33623829bbd769ee96501c2891bb22309a2a3f783d"
+    },
+    {
+      "path": "tests/test_fill_memory_reconstruction.py",
+      "sha256": "427b481b098c56c4264782d6142bf13f7f02afcb7dd141258d9100b9c0b3dae8"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
