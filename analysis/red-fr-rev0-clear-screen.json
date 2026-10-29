@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "red-fr-rev0",
+    "sha256": "23766290f3b2347f815f1e8977c3b84047ed880cadda8c4f1a3595a633daa303",
+    "status": "candidate"
+  },
+  "origin_reference": false,
+  "axis": "Disassembly",
+  "profile": "classic",
+  "source": "src/clear_screen.asm",
+  "source_sha256": "f45bcb9b9dfb6492abc5013f7efd3d8ff1315954188519233337f1883a6cf65b",
+  "function": {
+    "name": "ClearScreen",
+    "rom_offset": 6412,
+    "bank": 0,
+    "address": 6412,
+    "range_end_exclusive": 6431,
+    "length": 19,
+    "code_sha256": "586e16fcd56651f4974def3f39fd25bcb8ff8b180ef208a34289d894780eb2eb",
+    "raw_bytes_published": false,
+    "tail_jump": {
+      "name": "Delay3",
+      "address": 15860
+    }
+  },
+  "verified_behavior": {
+    "tilemap_address": 50080,
+    "blank_tile_value": 127,
+    "filled_byte_count": 360,
+    "counter_encoding": "BC=$0168 then INC B; C wraps for the second pass",
+    "waits_for_bg_update": "tail-jump to Delay3"
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "af519899719f0754965776faac0e836a3b906e6d",
+    "path": "home/copy2.asm"
+  },
+  "raw_rom_bytes_included": false
+}

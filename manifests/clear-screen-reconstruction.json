@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "game": "Aka",
+  "axis": "Disassembly",
+  "function": "ClearScreen",
+  "profile": "classic",
+  "origin_reference": "aka-jp-rev0",
+  "release_count": 7,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_clear_screen.py",
+    "tool_sha256": "8122f4bdbea9d93e12041df5d81788d307dfe26b68783d187c047eda11e2ea7b"
+  },
+  "outputs": [
+    {
+      "path": "analysis/aka-release-header-report.json",
+      "sha256": "ddc094bf37b30b08714ee7f1de21d7144accccb6d4d9db153077f86efa91d5ab"
+    },
+    {
+      "path": "src/clear_screen.asm",
+      "sha256": "f45bcb9b9dfb6492abc5013f7efd3d8ff1315954188519233337f1883a6cf65b"
+    },
+    {
+      "path": "analysis/clear-screen-summary.json",
+      "sha256": "51c0b77d7c73b8d417d0776ae83286aa59161ce6336ca6c4b0c0c33f1b18c841"
+    },
+    {
+      "path": "analysis/aka-jp-rev0-clear-screen.json",
+      "sha256": "7e2f8a4e067b1ff6447659ac0eceb985b14811b67f4b6c4d864bee2aa6077200"
+    },
+    {
+      "path": "analysis/aka-jp-rev1-clear-screen.json",
+      "sha256": "4662fc0077a6c5be506c67712358082f55b40d958dcbe8b7fdf7f2b53be996bd"
+    },
+    {
+      "path": "analysis/red-de-rev0-clear-screen.json",
+      "sha256": "96f0e16a8e0c6dc8aa180cb6bf1e9ca5e6977de332ea750fcdd9728e925f040f"
+    },
+    {
+      "path": "analysis/red-en-rev0-clear-screen.json",
+      "sha256": "ffc3aa5aa464dd7f8516ccabda9251f6b67dd5b5ed97600787143ac47ba4e6be"
+    },
+    {
+      "path": "analysis/red-es-rev0-clear-screen.json",
+      "sha256": "b77d5f2a5d3250ee9ed463a72d1f28b4a970cf88e0cf38affd5833f8820162c4"
+    },
+    {
+      "path": "analysis/red-fr-rev0-clear-screen.json",
+      "sha256": "cfc53805c24a753cc680e735339fb6918756ab73cdd3888f8482209699fe6357"
+    },
+    {
+      "path": "analysis/red-it-rev0-clear-screen.json",
+      "sha256": "9d4858f90979af9a10def9c69e51afd2d4399480ed97ffa9f76db2df6ddbe7d0"
+    },
+    {
+      "path": "research/clear-screen-reconstruction.md",
+      "sha256": "147ea1c6c93fa4e1e544393ad352f3144a5dac0c7895f15673e1f1437a0fda4e"
+    },
+    {
+      "path": "tests/test_clear_screen_reconstruction.py",
+      "sha256": "3d748f4f4df006402c19b739b9a8974db8b964caa5f57773686ec026ac8497a6"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
