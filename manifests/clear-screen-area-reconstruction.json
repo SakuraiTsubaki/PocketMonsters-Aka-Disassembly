@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "axis": "Disassembly",
+  "game": "Aka",
+  "function": "ClearScreenArea",
+  "profile": "classic",
+  "origin_reference": "aka-jp-rev0",
+  "release_count": 7,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_clear_screen_area.py",
+    "tool_sha256": "f59d2c538455cb5da99d8107e1cc4c52e21c5360daa4757ba405662ed042c733"
+  },
+  "outputs": [
+    {
+      "path": "analysis/aka-release-header-report.json",
+      "sha256": "ddc094bf37b30b08714ee7f1de21d7144accccb6d4d9db153077f86efa91d5ab"
+    },
+    {
+      "path": "src/clear_screen_area.asm",
+      "sha256": "438405dd664d6e9311dd0692ee0d5a7bf7e3d19cd4ed4442388d68a32eee9d6f"
+    },
+    {
+      "path": "analysis/clear-screen-area-summary.json",
+      "sha256": "bc5c0580b7f0fe8301c6ef6b48143ed34059552c856f8402cb14132628a09324"
+    },
+    {
+      "path": "analysis/aka-jp-rev0-clear-screen-area.json",
+      "sha256": "fa72f286ae60136c90a236d36ac0817971185f5ebe57ee2c7e0a8f6c5965e382"
+    },
+    {
+      "path": "analysis/aka-jp-rev1-clear-screen-area.json",
+      "sha256": "98e9468a1d618da97f76de308f74b52046d02b715922c52fda781268294e9224"
+    },
+    {
+      "path": "analysis/red-de-rev0-clear-screen-area.json",
+      "sha256": "6e2cc0ac6da46a56b1cdfd94c970f8b5a73eb13c746d7f3c03285dbd04c20b55"
+    },
+    {
+      "path": "analysis/red-en-rev0-clear-screen-area.json",
+      "sha256": "b395d97d19d48c46362658622c0924c09c2df504eea6a09fd587fc6e435789ef"
+    },
+    {
+      "path": "analysis/red-es-rev0-clear-screen-area.json",
+      "sha256": "e2b7fc1b54207464980c40fbfc1026490f43e7e2a7e86990b90159c47ac65fca"
+    },
+    {
+      "path": "analysis/red-fr-rev0-clear-screen-area.json",
+      "sha256": "696b2a4dc52f02a1c09d48d777750173f7439d76329921a1b3811c3d7b6d517c"
+    },
+    {
+      "path": "analysis/red-it-rev0-clear-screen-area.json",
+      "sha256": "00382a7cfba48ab01c8447564c09e12d22c6998d986803b8da2645de555bc7bb"
+    },
+    {
+      "path": "research/clear-screen-area-reconstruction.md",
+      "sha256": "ccc99272d4552df6ceffb37f2eb06edbacf483a236f3586ed490a34613aa02b5"
+    },
+    {
+      "path": "tests/test_clear_screen_area_reconstruction.py",
+      "sha256": "8e83dd844d85179708251f3784594c3d6ec33664d81da31c1e74e79409e985b6"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

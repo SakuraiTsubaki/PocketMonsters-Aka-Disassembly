@@ -1,0 +1,3 @@
+# Aka ClearScreenArea disassembly
+
+`aka-jp-rev0` is the Japanese origin reference. All 7 cataloged releases (Japanese, German, English, Spanish, French, Italian) contain exactly one 18-byte ROM0 routine. It fills a B-by-C tilemap rectangle with tile 0x7F, restores the row start and dimensions for each row, and advances by the 20-tile screen width. Candidate status is retained; maps publish hashes and behavior, not ROM bytes.

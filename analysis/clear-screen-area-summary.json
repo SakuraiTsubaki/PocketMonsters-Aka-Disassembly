@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "axis": "Disassembly",
+  "game": "Aka",
+  "function": "ClearScreenArea",
+  "profile": "classic",
+  "origin_reference": "aka-jp-rev0",
+  "release_count": 7,
+  "source": "src/clear_screen_area.asm",
+  "releases": [
+    {
+      "id": "aka-jp-rev0",
+      "language": "Japanese",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "392ce450d708c8d127aaed7afc20001a48625bd83a5fa5325be82f5c0972ccfa",
+      "origin_reference": true,
+      "address": "0x0374",
+      "blank_tile_value": 127,
+      "code_sha256": "46400b6a016d0cbf21a7005fe91b9e063f664adf0bca1ba38446c1624a3fa3ab",
+      "evidence": "analysis/aka-jp-rev0-clear-screen-area.json"
+    },
+    {
+      "id": "aka-jp-rev1",
+      "language": "Japanese",
+      "revision": 1,
+      "status": "candidate",
+      "sha256": "751abb1fb2b2d6b91dc631fa10ed36bd07f682cb5c3febe6c8f0e3dabc1fae1c",
+      "origin_reference": false,
+      "address": "0x0374",
+      "blank_tile_value": 127,
+      "code_sha256": "46400b6a016d0cbf21a7005fe91b9e063f664adf0bca1ba38446c1624a3fa3ab",
+      "evidence": "analysis/aka-jp-rev1-clear-screen-area.json"
+    },
+    {
+      "id": "red-de-rev0",
+      "language": "German",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "9cd186b288dbcd52413d561ae449f1f700c32b45af56dbf849095d4a0c8637a6",
+      "origin_reference": false,
+      "address": "0x18C4",
+      "blank_tile_value": 127,
+      "code_sha256": "46400b6a016d0cbf21a7005fe91b9e063f664adf0bca1ba38446c1624a3fa3ab",
+      "evidence": "analysis/red-de-rev0-clear-screen-area.json"
+    },
+    {
+      "id": "red-en-rev0",
+      "language": "English",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "5ca7ba01642a3b27b0cc0b5349b52792795b62d3ed977e98a09390659af96b7b",
+      "origin_reference": false,
+      "address": "0x18C4",
+      "blank_tile_value": 127,
+      "code_sha256": "46400b6a016d0cbf21a7005fe91b9e063f664adf0bca1ba38446c1624a3fa3ab",
+      "evidence": "analysis/red-en-rev0-clear-screen-area.json"
+    },
+    {
+      "id": "red-es-rev0",
+      "language": "Spanish",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "a756cf7ad888aa46de4b9699a177a0edf1775e59eb6330014c6f5c139be9c45d",
+      "origin_reference": false,
+      "address": "0x18C4",
+      "blank_tile_value": 127,
+      "code_sha256": "46400b6a016d0cbf21a7005fe91b9e063f664adf0bca1ba38446c1624a3fa3ab",
+      "evidence": "analysis/red-es-rev0-clear-screen-area.json"
+    },
+    {
+      "id": "red-fr-rev0",
+      "language": "French",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "23766290f3b2347f815f1e8977c3b84047ed880cadda8c4f1a3595a633daa303",
+      "origin_reference": false,
+      "address": "0x18C1",
+      "blank_tile_value": 127,
+      "code_sha256": "46400b6a016d0cbf21a7005fe91b9e063f664adf0bca1ba38446c1624a3fa3ab",
+      "evidence": "analysis/red-fr-rev0-clear-screen-area.json"
+    },
+    {
+      "id": "red-it-rev0",
+      "language": "Italian",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "e805d00b0002156d38b96efd57c823b0db3a3ef4cd32f98bd9bb4779bda3dd5b",
+      "origin_reference": false,
+      "address": "0x18C4",
+      "blank_tile_value": 127,
+      "code_sha256": "46400b6a016d0cbf21a7005fe91b9e063f664adf0bca1ba38446c1624a3fa3ab",
+      "evidence": "analysis/red-it-rev0-clear-screen-area.json"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
