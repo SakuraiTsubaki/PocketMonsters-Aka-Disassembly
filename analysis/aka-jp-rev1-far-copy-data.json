@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "aka-jp-rev1",
+    "sha256": "751abb1fb2b2d6b91dc631fa10ed36bd07f682cb5c3febe6c8f0e3dabc1fae1c",
+    "status": "candidate"
+  },
+  "origin_reference": false,
+  "function": {
+    "name": "FarCopyData",
+    "rom_offset": 419,
+    "bank": 0,
+    "address": 419,
+    "range_end_exclusive": 443,
+    "length": 24,
+    "code_sha256": "8d76df5ee7f8e67e77434fc13b4483aacc412ea2b22a0ae876047103632f6a32",
+    "wBuffer": "0xCEE4",
+    "hLoadedROMBank": "0xFFB8",
+    "rROMB": "0x2000",
+    "copy_data_address": "0x01BB"
+  },
+  "semantics": {
+    "source_bank": "A",
+    "source_address": "HL",
+    "destination_address": "DE",
+    "length": "BC",
+    "operation": "save the current ROM bank, switch to A, call CopyData, then restore the prior bank",
+    "preserves_previous_rom_bank": true
+  },
+  "cross_reference": {
+    "copy_data": "analysis/aka-jp-rev1-copy-data.json",
+    "sha256": "c6215f1c88b4fc3e7c82c6b5d595c3b472ec48407bde6369593c00547d2c57ef"
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "af519899719f0754965776faac0e836a3b906e6d",
+    "path": "home/copy.asm"
+  },
+  "raw_rom_bytes_included": false
+}

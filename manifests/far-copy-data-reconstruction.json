@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "game": "Aka",
+  "function": "FarCopyData",
+  "profile": "classic",
+  "origin_reference": "aka-jp-rev0",
+  "release_count": 7,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_far_copy_data.py",
+    "tool_sha256": "297f4de29bbea6e692490bee7bae88686f1033969c19d403ac86d425a750bb31"
+  },
+  "outputs": [
+    {
+      "path": "analysis/aka-release-header-report.json",
+      "sha256": "ddc094bf37b30b08714ee7f1de21d7144accccb6d4d9db153077f86efa91d5ab"
+    },
+    {
+      "path": "src/far_copy_data.asm",
+      "sha256": "34a2443d324270ff4851d0bb4e3c0f061d1d00646c0f08448254526918d3f7e0"
+    },
+    {
+      "path": "analysis/far-copy-data-summary.json",
+      "sha256": "aa9fb025e0ca694737251dc5957be7db53e05bfa8071d04fad1606e2f7f9bcc0"
+    },
+    {
+      "path": "analysis/aka-jp-rev0-far-copy-data.json",
+      "sha256": "d54bf4c8f8cf3e881245bf706af395bbf94d4ee57853a4bf5b4c0f6911aead92"
+    },
+    {
+      "path": "analysis/aka-jp-rev1-far-copy-data.json",
+      "sha256": "bd4e56262a5e49c239bd41a07f486f1159e7606f661fd937e449f6837f350f17"
+    },
+    {
+      "path": "analysis/red-de-rev0-far-copy-data.json",
+      "sha256": "a4140159ebf67530b8d90793a0dfbc2a8cbcf76ca0f14c515c9142fc3d233f67"
+    },
+    {
+      "path": "analysis/red-en-rev0-far-copy-data.json",
+      "sha256": "82f452d163fb8c855e987cd549549fdb43b441d1ff11f4459a11d882edfe539e"
+    },
+    {
+      "path": "analysis/red-es-rev0-far-copy-data.json",
+      "sha256": "c0167817d452c786e1b2553f18e02dba41e46f4d463d021e0f33cbabc2e615bb"
+    },
+    {
+      "path": "analysis/red-fr-rev0-far-copy-data.json",
+      "sha256": "11fd0f96abb2fe9b91979fbbb057ef5841c5c6ad29d06e87c2bec707dd2fb492"
+    },
+    {
+      "path": "analysis/red-it-rev0-far-copy-data.json",
+      "sha256": "795946e1db1173a106091f7fe75e2992ad190fae93fca68d35d8b2b095098a62"
+    },
+    {
+      "path": "research/far-copy-data-reconstruction.md",
+      "sha256": "d4d15420661c477c9a5a34feca966c5ec91282960c084c4467697ffeb853d466"
+    },
+    {
+      "path": "tests/test_far_copy_data_reconstruction.py",
+      "sha256": "46ea1449d6ef24f6fc92336a18b02cef81a23cbe0a608ab0e61c5bea2beeff96"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
