@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "axis": "Disassembly",
+  "target": {
+    "release": "red-fr-rev0",
+    "sha256": "23766290f3b2347f815f1e8977c3b84047ed880cadda8c4f1a3595a633daa303",
+    "status": "candidate"
+  },
+  "origin_reference": false,
+  "profile": "classic",
+  "source": "src/delay3.asm",
+  "source_sha256": "2cfee926b987eccc759b1dd62dfe89e47c3e5e9d91da8a4569ac6f0746e28f59",
+  "dependency": {
+    "path": "analysis/delay-summary.json",
+    "sha256": "a5f6eb9bb6544c1fc7fd1ae9144c7df6ddb4948ccba8e4db29e27049e106e2a4",
+    "delay_frames_address": 14166
+  },
+  "functions": {
+    "Delay3": {
+      "rom_offset": 15860,
+      "bank": 0,
+      "address": 15860,
+      "range_end_exclusive": 15865,
+      "length": 5,
+      "frame_count": 3,
+      "delay_frames_target": 14166,
+      "code_sha256": "80acf8ac5b6c0fc048dfe693a556ffa9725709bd155c5511f8556589ec661769"
+    },
+    "ProtectedDelay3": {
+      "rom_offset": 6966,
+      "bank": 0,
+      "address": 6966,
+      "range_end_exclusive": 6972,
+      "length": 6,
+      "delay3_target": 15860,
+      "preserved_register": "BC",
+      "code_sha256": "17578dca562608148d4ce8ab85a2a8808eebdecc8a3079e6bc600b2e247dece7"
+    }
+  },
+  "semantics": {
+    "Delay3": "load C with three and tail-jump to DelayFrames",
+    "ProtectedDelay3": "preserve BC while calling Delay3",
+    "bg_update_reason": "wait three frames for the three-part background map update"
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "0dbf95cd12f5b1511c62ce69efe283000f780a8f",
+    "paths": [
+      "home/palettes.asm",
+      "home/text.asm"
+    ]
+  },
+  "raw_rom_bytes_included": false
+}

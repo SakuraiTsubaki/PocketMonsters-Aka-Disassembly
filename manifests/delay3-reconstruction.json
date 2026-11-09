@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "axis": "Disassembly",
+  "game": "Aka",
+  "profile": "classic",
+  "functions": [
+    "Delay3",
+    "ProtectedDelay3"
+  ],
+  "origin_reference": "aka-jp-rev0",
+  "release_count": 7,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_delay3.py",
+    "tool_sha256": "167f3aea2271487fc0c2bc885686c688b51c3e1ee19cb67dfbdc9073b4f34e99"
+  },
+  "outputs": [
+    {
+      "path": "analysis/aka-release-header-report.json",
+      "sha256": "ddc094bf37b30b08714ee7f1de21d7144accccb6d4d9db153077f86efa91d5ab"
+    },
+    {
+      "path": "analysis/delay-summary.json",
+      "sha256": "a5f6eb9bb6544c1fc7fd1ae9144c7df6ddb4948ccba8e4db29e27049e106e2a4"
+    },
+    {
+      "path": "src/delay3.asm",
+      "sha256": "2cfee926b987eccc759b1dd62dfe89e47c3e5e9d91da8a4569ac6f0746e28f59"
+    },
+    {
+      "path": "analysis/delay3-summary.json",
+      "sha256": "7d9d3a9ffd454e1227ad61fbe97757f9459fa4de43ff8c1c552bc5f0998df07b"
+    },
+    {
+      "path": "analysis/aka-jp-rev0-delay3.json",
+      "sha256": "b8cd7b129f1d96d1966f06422190014819658228b8cb61a725f6fb7d9a99bb66"
+    },
+    {
+      "path": "analysis/aka-jp-rev1-delay3.json",
+      "sha256": "53b385c7fe15f54f5dae151d5414c92c6ff373332319e4ec282f2c650f9021f3"
+    },
+    {
+      "path": "analysis/red-de-rev0-delay3.json",
+      "sha256": "01273c84ec76b1077ac1c0995e3ffa2dede349cd901efc2b16864cc06c9a079d"
+    },
+    {
+      "path": "analysis/red-en-rev0-delay3.json",
+      "sha256": "be49a196a0bd4cbb6260c12d97a1ceb25783a7030f24c027f8ec2341e5c8c46e"
+    },
+    {
+      "path": "analysis/red-es-rev0-delay3.json",
+      "sha256": "bf02b99de895c0bb904adc703312a31d0b146f936366ef14d32acfce2ec1b497"
+    },
+    {
+      "path": "analysis/red-fr-rev0-delay3.json",
+      "sha256": "80f9be7401e165a0577d0957f1701bb449c3633f958c4021e0584f10de5b00a0"
+    },
+    {
+      "path": "analysis/red-it-rev0-delay3.json",
+      "sha256": "58fc69cc66716e6ec433276019f75e16de75c0ff861d00d5375e9e0113690e17"
+    },
+    {
+      "path": "research/delay3-reconstruction.md",
+      "sha256": "dd77aaee72713ab637a5800118f654a9ec77db27e90bcfb60193069daf7b2e0c"
+    },
+    {
+      "path": "tests/test_delay3_reconstruction.py",
+      "sha256": "92edeaf3290ff7b61c8dae524d77c2b1cec2ca21a998da5da387f2f4f4900859"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
