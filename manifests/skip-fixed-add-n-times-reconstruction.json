@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Aka",
+  "functions": [
+    "SkipFixedLengthTextEntries",
+    "AddNTimes"
+  ],
+  "origin_reference": "aka-jp-rev0",
+  "release_count": 7,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_skip_fixed_add_n_times.py",
+    "tool_sha256": "55d7d5dff3d0f87712faca036caf16df472a5301303ddb5c5a49a00eeb955f1f",
+    "dependency": {
+      "tool": "tools/catalog_gen1_is_in_array.py",
+      "sha256": "cd31391b5203daa83fe09cc01fa8e6dfcd27abb838d1dd514060f8e24605f704"
+    }
+  },
+  "outputs": [
+    {
+      "path": "analysis/aka-release-header-report.json",
+      "sha256": "ddc094bf37b30b08714ee7f1de21d7144accccb6d4d9db153077f86efa91d5ab"
+    },
+    {
+      "path": "src/skip_fixed_length_text_entries_add_n_times.asm",
+      "sha256": "a1ef71e76cf92ad35483b85d42b4d0afb6cda45cf160fa7e006fe5e0dffb0a4f"
+    },
+    {
+      "path": "analysis/skip-fixed-add-n-times-summary.json",
+      "sha256": "bdc90a451464fddacc94a7c46e1adc09749574faefb8112fc8524c3dff97448f"
+    },
+    {
+      "path": "analysis/aka-jp-rev0-skip-fixed-add-n-times.json",
+      "sha256": "dc25af03057e7178b1b6ef705f8b67ad7eb90db0ef9e8c7a5cd2e67aadcb2719"
+    },
+    {
+      "path": "analysis/aka-jp-rev1-skip-fixed-add-n-times.json",
+      "sha256": "81ae34741b1cb4629b7b054d2557b9d1a54f0f64b2ae9486ca853fb95f0c8ea4"
+    },
+    {
+      "path": "analysis/red-en-rev0-skip-fixed-add-n-times.json",
+      "sha256": "5b66666ae2663b74a9c0016bd670f89eacbe19ee140366fb2d74c4e0100bd9c5"
+    },
+    {
+      "path": "analysis/red-de-rev0-skip-fixed-add-n-times.json",
+      "sha256": "bcfa641dea4b3ac39f0fd8bb85118d5225bf9aca2cd2f432895670ed4abfb9ed"
+    },
+    {
+      "path": "analysis/red-fr-rev0-skip-fixed-add-n-times.json",
+      "sha256": "aac09b71bf7bb1439eaca2d9b641a257dd6c964b698ebb63206a2f6e06f93e8d"
+    },
+    {
+      "path": "analysis/red-it-rev0-skip-fixed-add-n-times.json",
+      "sha256": "3db78863d98a9aa4f9583ea7ce83de5518731d22b6d4bc55bc2a5c3352dda9e4"
+    },
+    {
+      "path": "analysis/red-es-rev0-skip-fixed-add-n-times.json",
+      "sha256": "7ec0129fac63513e9d64399c6452a628d9d9e1b944efa8877f756cd63c0557f9"
+    },
+    {
+      "path": "research/skip-fixed-add-n-times-reconstruction.md",
+      "sha256": "a338a5e1561208580c185f7926d05dbd09ea745931df69b032d2885d58208a8e"
+    },
+    {
+      "path": "tests/test_skip_fixed_add_n_times_reconstruction.py",
+      "sha256": "5e77a8739479271b903772fb97761681c8cce9faa75e729f4a46c43779bab2fa"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
