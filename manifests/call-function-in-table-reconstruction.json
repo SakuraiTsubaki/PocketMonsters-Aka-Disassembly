@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Aka",
+  "function": "CallFunctionInTable",
+  "origin_reference": "aka-jp-rev0",
+  "release_count": 7,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_call_function_in_table.py",
+    "tool_sha256": "d8cc618263234ef5a752bcfb576feefae31a7570d2c043a2b471fa2a257565e1",
+    "dependency": {
+      "tool": "tools/catalog_gen1_is_in_array.py",
+      "sha256": "cd31391b5203daa83fe09cc01fa8e6dfcd27abb838d1dd514060f8e24605f704"
+    }
+  },
+  "outputs": [
+    {
+      "path": "analysis/aka-release-header-report.json",
+      "sha256": "ddc094bf37b30b08714ee7f1de21d7144accccb6d4d9db153077f86efa91d5ab"
+    },
+    {
+      "path": "src/call_function_in_table.asm",
+      "sha256": "1f50a793da0500e1fb15c277b13f3995660905d1e14a44db7e8eacd826d4f6e5"
+    },
+    {
+      "path": "analysis/call-function-in-table-summary.json",
+      "sha256": "c612196a62395a65dd712dc28ea1926fedb0fe4565220d4f5fda29a0b4ab09ff"
+    },
+    {
+      "path": "analysis/aka-jp-rev0-call-function-in-table.json",
+      "sha256": "b85f69995a13ebd89867d19643b0236eaebab43a1c56fd436665dd21bc86fb9f"
+    },
+    {
+      "path": "analysis/aka-jp-rev1-call-function-in-table.json",
+      "sha256": "45694fe83026f388551e19c3432949b9b489ecdcf70b2ecfb530f2ad95555f2a"
+    },
+    {
+      "path": "analysis/red-en-rev0-call-function-in-table.json",
+      "sha256": "3ad3ed6a75c21c3cc6315a5754173287260b5c2dcb0c45baf121c1f65c36c8df"
+    },
+    {
+      "path": "analysis/red-de-rev0-call-function-in-table.json",
+      "sha256": "bcf1c3dad8cb5428db7cd3b0924ac1f1dccdf8aff4841c14ca4ce8d8339318ca"
+    },
+    {
+      "path": "analysis/red-fr-rev0-call-function-in-table.json",
+      "sha256": "51ed7b74e0220cd8a6508512d8df7bd3ea0b2e766434abad63c61f5ee2080b84"
+    },
+    {
+      "path": "analysis/red-it-rev0-call-function-in-table.json",
+      "sha256": "ee9425b4f7f9864e99851b5150ad5c81d1f6a1acc7e5d62d8ab2a1a9f6631f23"
+    },
+    {
+      "path": "analysis/red-es-rev0-call-function-in-table.json",
+      "sha256": "693dc726b2dec9128a63e63b67d935bc96220592bfe40bd8d80e20a6baecd4e1"
+    },
+    {
+      "path": "research/call-function-in-table-reconstruction.md",
+      "sha256": "a14c8355c7755cccc5573aaf08b0c8fc2f232e9135b24df52a0d3d6a50aea23a"
+    },
+    {
+      "path": "tests/test_call_function_in_table_reconstruction.py",
+      "sha256": "e4eb6aaedc0949dbbe96d83b5492d42d7d9206472d33071f631289da98dbf3e3"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

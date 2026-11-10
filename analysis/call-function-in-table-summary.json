@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Aka",
+  "function": "CallFunctionInTable",
+  "origin_reference": "aka-jp-rev0",
+  "release_count": 7,
+  "source": "src/call_function_in_table.asm",
+  "releases": [
+    {
+      "id": "aka-jp-rev0",
+      "language": "Japanese",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "392ce450d708c8d127aaed7afc20001a48625bd83a5fa5325be82f5c0972ccfa",
+      "origin_reference": true,
+      "address": "0x3DC7",
+      "return_address": "0x3DD7",
+      "code_sha256": "d1f3699886aa670e980a8a280f7b0d7d4a7474fe0694b18ef02154e8170868ca",
+      "evidence": "analysis/aka-jp-rev0-call-function-in-table.json"
+    },
+    {
+      "id": "aka-jp-rev1",
+      "language": "Japanese",
+      "revision": 1,
+      "status": "candidate",
+      "sha256": "751abb1fb2b2d6b91dc631fa10ed36bd07f682cb5c3febe6c8f0e3dabc1fae1c",
+      "origin_reference": false,
+      "address": "0x3DB5",
+      "return_address": "0x3DC5",
+      "code_sha256": "5b019c5e1079c9ae08788c14cd943f01da8be5f77addf026e3c043d6cde93b7a",
+      "evidence": "analysis/aka-jp-rev1-call-function-in-table.json"
+    },
+    {
+      "id": "red-en-rev0",
+      "language": "English",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "5ca7ba01642a3b27b0cc0b5349b52792795b62d3ed977e98a09390659af96b7b",
+      "origin_reference": false,
+      "address": "0x3D97",
+      "return_address": "0x3DA7",
+      "code_sha256": "dbf54cefc861f96374530b0df06a62ab54ed78ecd2da77dcbfb1e7a222423746",
+      "evidence": "analysis/red-en-rev0-call-function-in-table.json"
+    },
+    {
+      "id": "red-de-rev0",
+      "language": "German",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "9cd186b288dbcd52413d561ae449f1f700c32b45af56dbf849095d4a0c8637a6",
+      "origin_reference": false,
+      "address": "0x3DB1",
+      "return_address": "0x3DC1",
+      "code_sha256": "81e7d4134c53f008efc1bde50fae81921e71925d15a820a5f9ce8d8fc182739e",
+      "evidence": "analysis/red-de-rev0-call-function-in-table.json"
+    },
+    {
+      "id": "red-fr-rev0",
+      "language": "French",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "23766290f3b2347f815f1e8977c3b84047ed880cadda8c4f1a3595a633daa303",
+      "origin_reference": false,
+      "address": "0x3DB4",
+      "return_address": "0x3DC4",
+      "code_sha256": "824424b8c0f215d04cf1a63d9a20126ac4fbaf5e6da870ed2af28982c8be64c3",
+      "evidence": "analysis/red-fr-rev0-call-function-in-table.json"
+    },
+    {
+      "id": "red-it-rev0",
+      "language": "Italian",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "e805d00b0002156d38b96efd57c823b0db3a3ef4cd32f98bd9bb4779bda3dd5b",
+      "origin_reference": false,
+      "address": "0x3DAF",
+      "return_address": "0x3DBF",
+      "code_sha256": "bc4d28b9d2e464c91615ee1fd44138f6eadb3f4f0566dd97a6fc60e8958081df",
+      "evidence": "analysis/red-it-rev0-call-function-in-table.json"
+    },
+    {
+      "id": "red-es-rev0",
+      "language": "Spanish",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "a756cf7ad888aa46de4b9699a177a0edf1775e59eb6330014c6f5c139be9c45d",
+      "origin_reference": false,
+      "address": "0x3DB6",
+      "return_address": "0x3DC6",
+      "code_sha256": "a88b5c81fa6594e3ebeef55c4a42f2c5b08dce436ebef5159abc6b57424e2bea",
+      "evidence": "analysis/red-es-rev0-call-function-in-table.json"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

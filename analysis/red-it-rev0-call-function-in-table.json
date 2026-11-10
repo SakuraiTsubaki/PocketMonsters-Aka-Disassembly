@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "red-it-rev0",
+    "sha256": "e805d00b0002156d38b96efd57c823b0db3a3ef4cd32f98bd9bb4779bda3dd5b",
+    "status": "candidate"
+  },
+  "origin_reference": false,
+  "source": "src/call_function_in_table.asm",
+  "source_sha256": "1f50a793da0500e1fb15c277b13f3995660905d1e14a44db7e8eacd826d4f6e5",
+  "function": {
+    "rom_offset": 15791,
+    "bank": 0,
+    "address": 15791,
+    "range_end_exclusive": 15811,
+    "length": 20,
+    "return_address": 15807,
+    "return_offset": 16,
+    "code_sha256": "bc4d28b9d2e464c91615ee1fd44138f6eadb3f4f0566dd97a6fc60e8958081df",
+    "name": "CallFunctionInTable",
+    "raw_bytes_published": false
+  },
+  "semantics": {
+    "input": "A is a zero-based index below 128; HL points to little-endian ROM0 addresses",
+    "operation": "load table[A], synthesize a return address, and jump to the target",
+    "return_mechanism": "the target returns to the embedded local address pushed before jp hl",
+    "preserves_after_target_return": [
+      "HL",
+      "DE",
+      "BC"
+    ],
+    "clobbers": [
+      "A",
+      "flags"
+    ]
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "0dbf95cd12f5b1511c62ce69efe283000f780a8f",
+    "path": "home/array2.asm"
+  },
+  "raw_rom_bytes_included": false
+}
